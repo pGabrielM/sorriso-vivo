@@ -1,2 +1,2 @@
-export { Services } from './Services';
-export { ServiceCard } from './ServiceCard';
+export { Services } from './services';
+export { ServiceCard } from './service-card';

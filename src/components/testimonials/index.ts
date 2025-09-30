@@ -1,2 +1,2 @@
-export { Testimonials } from './Testimonials';
-export { TestimonialCard } from './TestimonialCard';
+export { Testimonials } from './testimonials';
+export { TestimonialCard } from './testimonial-card';

@@ -1,1 +1,1 @@
-export { BookingForm } from './BookingForm';
+export { BookingForm } from './booking-form';

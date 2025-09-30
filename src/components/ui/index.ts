@@ -1,6 +1,8 @@
-export { Button } from './Button';
-export { Input } from './Input';
-export { Card } from './Card';
-export { Avatar } from './Avatar';
-export { Badge } from './Badge';
-export { Separator } from './Separator';
+export { Button } from './button';
+export { Input } from './input';
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './card';
+export { Avatar, AvatarImage, AvatarFallback } from './avatar';
+export { Badge } from './badge';
+export { Separator } from './separator';
+export { Textarea } from './textarea';
+export { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './select';

@@ -1,2 +1,2 @@
-export { Team } from './Team';
-export { TeamCard } from './TeamCard';
+export { Team } from './team';
+export { TeamCard } from './team-card';
