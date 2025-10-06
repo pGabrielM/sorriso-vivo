@@ -44,7 +44,7 @@ export const team: ITeamMember[] = [
     name: 'Dra. Ana Paula Silva',
     role: 'Cirurgiã-Dentista',
     specialty: 'Implantodontia e Prótese',
-    image: '/images/dentist-1.jpg',
+    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&q=80',
     cro: 'CRO-SP 12345',
     bio: 'Especialista em implantes dentários com mais de 15 anos de experiência'
   },
@@ -52,7 +52,7 @@ export const team: ITeamMember[] = [
     name: 'Dr. Carlos Eduardo Santos',
     role: 'Cirurgião-Dentista',
     specialty: 'Ortodontia',
-    image: '/images/dentist-2.jpg',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&q=80',
     cro: 'CRO-SP 23456',
     bio: 'Especialista em ortodontia e alinhadores invisíveis'
   },
@@ -60,7 +60,7 @@ export const team: ITeamMember[] = [
     name: 'Dra. Mariana Costa',
     role: 'Cirurgiã-Dentista',
     specialty: 'Estética Dental',
-    image: '/images/dentist-1.jpg',
+    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&q=80',
     cro: 'CRO-SP 34567',
     bio: 'Especialista em lentes de contato e harmonização orofacial'
   }
@@ -69,7 +69,7 @@ export const team: ITeamMember[] = [
 export const testimonials: ITestimonial[] = [
   {
     name: 'Maria Santos',
-    image: '/images/patient-1.jpg',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&q=80',
     rating: 5,
     text: 'Excelente atendimento! Fiz implantes e o resultado ficou perfeito. Equipe muito atenciosa e profissional.',
     date: '2024-10-01',
@@ -77,7 +77,7 @@ export const testimonials: ITestimonial[] = [
   },
   {
     name: 'João Silva',
-    image: '/images/patient-2.jpg',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&q=80',
     rating: 5,
     text: 'Realizei o clareamento dental e estou muito satisfeito com o resultado. Recomendo!',
     date: '2024-09-15',
@@ -85,7 +85,7 @@ export const testimonials: ITestimonial[] = [
   },
   {
     name: 'Ana Paula',
-    image: '/images/patient-1.jpg',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&q=80',
     rating: 5,
     text: 'Fiz lentes de contato dental e meu sorriso ficou incrível! Equipe super capacitada.',
     date: '2024-09-20',
