@@ -1,11 +1,12 @@
-import { Navbar } from '../components/nav';
-import { Hero } from '../components/hero';
-import { Services } from '../components/services';
-import { Team } from '../components/team';
-import { Testimonials } from '../components/testimonials';
-import { BookingForm } from '../components/booking';
-import { ContactForm, ContactDetails } from '../components/contact';
-import { Footer } from '../components/footer';
+import { Navbar } from '@/components/landing/navbar';
+import { Hero } from '@/components/landing/hero';
+import { Services } from '@/components/landing/services';
+import { Team } from '@/components/landing/team';
+import { Testimonials } from '@/components/landing/testimonials';
+import { BookingForm } from '@/components/landing/booking-form';
+import { ContactForm } from '@/components/landing/contact-form';
+import { ContactDetails } from '@/components/landing/contact-details';
+import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <Team />
         <Testimonials />
         <BookingForm />
-        <section id="contact" className="py-20 bg-white">
+        <section id="contato" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
