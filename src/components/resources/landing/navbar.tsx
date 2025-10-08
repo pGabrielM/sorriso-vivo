@@ -9,6 +9,7 @@ import anime from "@/lib/anime";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     // Animate navbar on mount
@@ -20,10 +21,13 @@ export function Navbar() {
       easing: "out-expo",
     });
 
-    // Handle scroll for active section
+    // Handle scroll for active section and navbar style
     const handleScroll = () => {
       const sections = ["inicio", "servicos", "equipe", "depoimentos", "agendamento", "contato"];
       const scrollPosition = window.scrollY + 100;
+
+      // Update navbar style based on scroll
+      setIsScrolled(window.scrollY > 10);
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -51,15 +55,25 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="navbar fixed top-0 right-0 left-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
+    <nav
+      className={`navbar fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${isScrolled
+          ? "bg-white shadow-lg backdrop-blur-md"
+          : "bg-white/95 shadow-sm backdrop-blur-sm"
+        }`}
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-600">
+          <Link href="/" className="group flex items-center space-x-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 shadow-md transition-transform group-hover:scale-110">
               <span className="text-2xl">😁</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Sorriso Vivo</span>
+            <div className="flex flex-col">
+              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-xl font-bold text-transparent">
+                Sorriso Vivo
+              </span>
+              <span className="-mt-1 text-xs text-gray-500">Odontologia Moderna</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,11 +82,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  activeSection === link.href.slice(1)
-                    ? "bg-blue-50 text-blue-600"
-                    : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
-                }`}
+                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${activeSection === link.href.slice(1)
+                    ? "bg-teal-50 text-teal-700 shadow-sm"
+                    : "text-gray-700 hover:bg-teal-50/50 hover:text-teal-600"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -81,15 +94,37 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild>
-              <Link href="#agendamento">Agendar Consulta</Link>
+            <Button
+              className="bg-teal-600 text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg"
+              asChild
+            >
+              <Link href="#agendamento">
+                <span className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Agendar Consulta
+                </span>
+              </Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded-md p-2 text-gray-700 hover:bg-gray-100 md:hidden"
+            className="rounded-lg p-2 text-gray-700 transition-colors hover:bg-teal-50 hover:text-teal-700 md:hidden"
+            aria-label="Menu"
           >
             <svg
               className="h-6 w-6"

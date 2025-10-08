@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="toothGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dente estilizado profissional -->
+  <g transform="translate(50, 50)">
+    <!-- Coroa do dente -->
+    <path d="M -20,-25 Q -20,-35 -12,-35 L -8,-35 Q -2,-35 0,-40 Q 2,-35 8,-35 L 12,-35 Q 20,-35 20,-25 L 20,-15 Q 20,-5 18,5 L 15,20 Q 14,25 12,28 Q 8,32 0,32 Q -8,32 -12,28 Q -14,25 -15,20 L -18,5 Q -20,-5 -20,-15 Z" 
+          fill="url(#toothGradient)" 
+          stroke="#ffffff" 
+          stroke-width="2"/>
+    
+    <!-- Brilho para dar profissionalismo -->
+    <ellipse cx="-8" cy="-18" rx="4" ry="6" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="5" cy="-22" rx="3" ry="4" fill="rgba(255,255,255,0.3)"/>
+  </g>
+</svg>

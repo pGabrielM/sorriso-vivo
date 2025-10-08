@@ -5,67 +5,111 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/commons/card";
+import { contactInfo } from "@/utils/landing-helper";
 
 export function ContactDetails() {
-  const contactInfo = [
+  const contactDetails = [
     {
       icon: "📍",
       title: "Endereço",
-      details: "Rua das Flores, 123 - Centro\nSão Paulo - SP, 01234-567",
+      details: `${contactInfo.address.full}`,
+      link: contactInfo.mapUrl,
     },
     {
       icon: "📞",
-      title: "Telefone",
-      details: "(11) 3456-7890\n(11) 98765-4321",
+      title: "Telefone e WhatsApp",
+      details: `${contactInfo.contact.phone}\n${contactInfo.contact.whatsapp} (WhatsApp)`,
+      link: `https://wa.me/554198765432`,
     },
     {
       icon: "📧",
       title: "Email",
-      details: "contato@sorrisovivo.com.br\natendimento@sorrisovivo.com.br",
+      details: contactInfo.contact.email,
+      link: `mailto:${contactInfo.contact.email}`,
     },
     {
       icon: "🕐",
       title: "Horário de Atendimento",
-      details: "Segunda a Sexta: 8h às 18h\nSábado: 8h às 12h",
+      details: `${contactInfo.hours.weekdays}\n${contactInfo.hours.saturday}\n${contactInfo.hours.sunday}`,
     },
   ];
 
   return (
     <div className="space-y-6">
-      <Card>
+      <Card className="border-teal-100">
         <CardHeader>
-          <CardTitle>Informações de Contato</CardTitle>
+          <CardTitle className="text-gray-900">Informações de Contato</CardTitle>
           <CardDescription>
             Entre em contato através de qualquer um dos canais abaixo
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          {contactInfo.map((item, index) => (
+          {contactDetails.map((item, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-2xl">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 text-2xl">
                 {item.icon}
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="mb-1 font-semibold text-gray-900">{item.title}</h3>
-                <p className="text-sm whitespace-pre-line text-gray-600">{item.details}</p>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm whitespace-pre-line text-teal-700 transition-colors hover:text-teal-800 hover:underline"
+                  >
+                    {item.details}
+                  </a>
+                ) : (
+                  <p className="text-sm whitespace-pre-line text-gray-600">{item.details}</p>
+                )}
               </div>
             </div>
           ))}
         </CardContent>
       </Card>
 
-      <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+      <Card className="border-none bg-gradient-to-br from-teal-600 to-cyan-600 text-white shadow-lg">
         <CardContent className="pt-6">
           <h3 className="mb-2 text-xl font-bold">Pronto para transformar seu sorriso?</h3>
-          <p className="mb-4 text-blue-100">
-            Agende sua avaliação gratuita e descubra como podemos ajudar você!
+          <p className="mb-4 text-teal-50">
+            Agende sua avaliação gratuita e descubra como nossa equipe pode criar o sorriso dos seus
+            sonhos!
           </p>
-          <a
-            href="#agendamento"
-            className="inline-block rounded-md bg-white px-6 py-3 font-semibold text-blue-600 transition-colors hover:bg-blue-50"
-          >
-            Agendar Avaliação Gratuita
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#agendamento"
+              className="inline-block rounded-lg bg-white px-6 py-3 text-center font-semibold text-teal-700 transition-all hover:bg-teal-50 hover:shadow-md"
+            >
+              Agendar Avaliação Gratuita
+            </a>
+            <a
+              href="https://wa.me/554198765432?text=Olá! Gostaria de agendar uma consulta na Sorriso Vivo."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg border-2 border-white px-6 py-3 text-center font-semibold text-white transition-all hover:bg-white hover:text-teal-700"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Mapa */}
+      <Card className="overflow-hidden border-teal-100">
+        <CardContent className="p-0">
+          <div className="relative h-64 w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.2156!2d-49.2768!3d-25.4423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI2JzMyLjMiUyA0OcKwMTYnMzYuNSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Sorriso Vivo - Batel, Curitiba"
+            />
+          </div>
         </CardContent>
       </Card>
     </div>

@@ -69,17 +69,24 @@ export function Services() {
   }, []);
 
   return (
-    <section id="servicos" className="bg-white py-20">
+    <section id="servicos" className="bg-gradient-to-b from-white via-teal-50/30 to-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
+          <div className="mb-4 inline-block rounded-full border border-teal-200 bg-teal-50 px-4 py-1.5">
+            <span className="text-sm font-medium text-teal-700">🦷 Nossos Tratamentos</span>
+          </div>
           <h2
             ref={titleRef}
             className="mb-4 text-3xl font-bold text-gray-900 opacity-0 md:text-4xl"
           >
-            Nossos Serviços
+            Serviços Odontológicos de{" "}
+            <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+              Excelência
+            </span>
           </h2>
           <p ref={descRef} className="mx-auto max-w-2xl text-xl text-gray-600 opacity-0">
-            Oferecemos uma ampla gama de tratamentos odontológicos com tecnologia de ponta
+            Tratamentos completos com tecnologia de ponta e equipe especializada para cuidar do seu
+            sorriso
           </p>
         </div>
 
