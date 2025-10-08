@@ -1,6 +1,6 @@
 'use client';
 
-import { testimonials } from '@/helpers/landing-helper';
+import { testimonials } from '@/utils/landing-helper';
 import { TestimonialCard } from './testimonial-card';
 
 export function Testimonials() {

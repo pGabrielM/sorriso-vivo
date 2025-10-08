@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ITestimonial } from '@/types/landing';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { ITestimonial } from '@/types/landings';
+import { Card, CardContent, CardHeader } from '@/components/commons/card';
 
 interface TestimonialCardProps {
   testimonial: ITestimonial;

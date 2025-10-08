@@ -1,6 +1,6 @@
 'use client';
 
-import { services } from '@/helpers/landing-helper';
+import { services } from '@/utils/landing-helper';
 import { ServiceCard } from './service-card';
 import { useEffect, useRef } from 'react';
 import anime from '@/lib/anime';

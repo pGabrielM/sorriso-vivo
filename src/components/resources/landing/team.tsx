@@ -1,6 +1,6 @@
 'use client';
 
-import { team } from '@/helpers/landing-helper';
+import { team } from '@/utils/landing-helper';
 import { TeamCard } from './team-card';
 
 export function Team() {

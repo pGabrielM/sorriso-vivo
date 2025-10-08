@@ -1,4 +1,4 @@
-import { IService, ITeamMember, ITestimonial } from '@/types/landing';
+import { IService, ITeamMember, ITestimonial } from '@/types/landings';
 
 export const services: IService[] = [
   {

@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { services } from '@/helpers/landing-helper';
-import type { IBookingData } from '@/types/landing';
+import { Button } from '@/components/commons/button';
+import { Input } from '@/components/commons/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/commons/card';
+import { services } from '@/utils/landing-helper';
+import type { IBookingData } from '@/types/landings';
 
 export function BookingForm() {
   const [formData, setFormData] = useState<IBookingData>({
