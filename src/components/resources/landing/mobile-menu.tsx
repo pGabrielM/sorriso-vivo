@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { Button } from '@/components/commons/button';
+import Link from "next/link";
+import { Button } from "@/components/commons/button";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -12,13 +12,13 @@ export function MobileMenu({ isOpen, navLinks, onClose }: MobileMenuProps) {
 
   return (
     <div className="md:hidden">
-      <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+      <div className="space-y-1 border-t bg-white px-2 pt-2 pb-3">
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
             onClick={onClose}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
           >
             {link.label}
           </Link>

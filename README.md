@@ -1,7 +1,5 @@
 # 🦷 Sorriso Vivo - Clínica Odontológica# Sorriso Vivo - Landing Page Profissional
 
-
-
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black)Uma landing page completa e profissional para a clínica odontológica Sorriso Vivo, construída com as melhores práticas de desenvolvimento web moderno.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
@@ -38,7 +36,7 @@ Site moderno e profissional para clínica odontológica com animações suaves e
 
 - **Framer Motion** - Animações e transições
 
-```- **Lucide React** - Ícones modernos
+````- **Lucide React** - Ícones modernos
 
 src/- **ESLint** - Linting e qualidade de código
 
@@ -104,19 +102,19 @@ src/- **ESLint** - Linting e qualidade de código
 
 ### Pré-requisitos
 
-```
+````
 
 - Node.js 20+src/
 
-- npm ou yarn├── app/                    # Páginas Next.js (App Router)
+- npm ou yarn├── app/ # Páginas Next.js (App Router)
 
-│   ├── layout.tsx         # Layout principal com metadados
+│ ├── layout.tsx # Layout principal com metadados
 
-### Instalação│   ├── page.tsx           # Página inicial
+### Instalação│ ├── page.tsx # Página inicial
 
-│   └── globals.css        # Estilos globais e animações
+│ └── globals.css # Estilos globais e animações
 
-```bash├── components/            # Componentes organizados por domínio
+````bash├── components/            # Componentes organizados por domínio
 
 # Clone o repositório│   ├── ui/               # Componentes base (shadcn/ui)
 
@@ -255,13 +253,14 @@ Este projeto é propriedade da Clínica Sorriso Vivo.
   "@radix-ui/react-avatar": "^1.1.10",
   "tailwind-merge": "^3.3.1"
 }
-```
+````
 
 ## 🎯 Personalizações
 
 ### Atualizar Informações da Clínica
 
 Edite o arquivo `src/helpers/landing-helper.ts` para atualizar:
+
 - Serviços oferecidos
 - Informações da equipe
 - Depoimentos de pacientes
@@ -269,6 +268,7 @@ Edite o arquivo `src/helpers/landing-helper.ts` para atualizar:
 ### Customizar Cores e Estilo
 
 As cores principais podem ser ajustadas no arquivo `src/app/globals.css`:
+
 - Azul primário: `#3B82F6`
 - Gradientes e sombras personalizados
 
@@ -281,6 +281,7 @@ As cores principais podem ser ajustadas no arquivo `src/app/globals.css`:
 ## 📱 Responsividade
 
 O site é totalmente responsivo com breakpoints:
+
 - Mobile: < 768px
 - Tablet: 768px - 1024px
 - Desktop: > 1024px

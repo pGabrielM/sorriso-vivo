@@ -1,36 +1,40 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Button } from '@/components/commons/button';
-import { Input } from '@/components/commons/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/commons/card';
-import { services } from '@/utils/landing-helper';
-import type { IBookingData } from '@/types/landings';
+import { useState } from "react";
+import { Button } from "@/components/commons/button";
+import { Input } from "@/components/commons/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/commons/card";
+import { services } from "@/utils/landing-helper";
+import type { IBookingData } from "@/types/landings";
 
 export function BookingForm() {
   const [formData, setFormData] = useState<IBookingData>({
-    name: '',
-    phone: '',
-    email: '',
-    service: '',
-    date: '',
-    time: '',
-    message: ''
+    name: "",
+    phone: "",
+    email: "",
+    service: "",
+    date: "",
+    time: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Booking data:', formData);
-    alert('Agendamento enviado com sucesso! Entraremos em contato em breve.');
+    console.warn("Booking data:", formData);
+    alert("Agendamento enviado com sucesso! Entraremos em contato em breve.");
   };
 
   return (
-    <section id="agendamento" className="py-20 bg-gradient-to-br from-blue-50 to-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Agende Sua Consulta
-          </h2>
+    <section id="agendamento" className="bg-gradient-to-br from-blue-50 to-white py-20">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Agende Sua Consulta</h2>
           <p className="text-xl text-gray-600">
             Preencha o formulário e entraremos em contato para confirmar
           </p>
@@ -43,9 +47,9 @@ export function BookingForm() {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="mb-2 block text-sm font-medium text-gray-700">
                     Nome Completo *
                   </label>
                   <Input
@@ -57,9 +61,7 @@ export function BookingForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Telefone *
-                  </label>
+                  <label className="mb-2 block text-sm font-medium text-gray-700">Telefone *</label>
                   <Input
                     required
                     type="tel"
@@ -70,9 +72,7 @@ export function BookingForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email *
-                  </label>
+                  <label className="mb-2 block text-sm font-medium text-gray-700">Email *</label>
                   <Input
                     required
                     type="email"
@@ -83,14 +83,14 @@ export function BookingForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="mb-2 block text-sm font-medium text-gray-700">
                     Serviço Desejado *
                   </label>
                   <select
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   >
                     <option value="">Selecione um serviço</option>
                     {services.map((service, index) => (
@@ -102,7 +102,7 @@ export function BookingForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="mb-2 block text-sm font-medium text-gray-700">
                     Data Preferida *
                   </label>
                   <Input
@@ -114,7 +114,7 @@ export function BookingForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="mb-2 block text-sm font-medium text-gray-700">
                     Horário Preferido *
                   </label>
                   <Input
@@ -127,14 +127,14 @@ export function BookingForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="mb-2 block text-sm font-medium text-gray-700">
                   Mensagem (Opcional)
                 </label>
                 <textarea
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Conte-nos mais sobre sua necessidade..."
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[100px]"
+                  className="min-h-[100px] w-full rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
 

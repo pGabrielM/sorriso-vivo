@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sorriso Vivo - Clínica Odontológica Moderna",
-  description: "Clínica odontológica especializada em cuidados modernos do sorriso. Agende sua consulta e conheça nossos serviços.",
+  description:
+    "Clínica odontológica especializada em cuidados modernos do sorriso. Agende sua consulta e conheça nossos serviços.",
 };
 
 export default function RootLayout({
@@ -24,11 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }
