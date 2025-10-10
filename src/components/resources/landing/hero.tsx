@@ -139,7 +139,7 @@ export function Hero() {
             <div className="absolute inset-0 rotate-3 transform rounded-3xl bg-gradient-to-br from-teal-400 to-cyan-500" />
             <div className="relative h-full overflow-hidden rounded-3xl shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=1000&fit=crop&q=80"
+                src="/images/hero/dentista-clinica.jpg"
                 alt="Clínica Odontológica Sorriso Vivo - Batel Curitiba"
                 fill
                 className="object-cover"

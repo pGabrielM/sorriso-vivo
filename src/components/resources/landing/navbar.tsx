@@ -56,10 +56,11 @@ export function Navbar() {
 
   return (
     <nav
-      className={`navbar fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${isScrolled
+      className={`navbar fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled
           ? "bg-white shadow-lg backdrop-blur-md"
           : "bg-white/95 shadow-sm backdrop-blur-sm"
-        }`}
+      }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
@@ -82,10 +83,11 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${activeSection === link.href.slice(1)
+                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+                  activeSection === link.href.slice(1)
                     ? "bg-teal-50 text-teal-700 shadow-sm"
                     : "text-gray-700 hover:bg-teal-50/50 hover:text-teal-600"
-                  }`}
+                }`}
               >
                 {link.label}
               </Link>

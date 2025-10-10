@@ -77,14 +77,19 @@ export function Services() {
           </div>
           <h2
             ref={titleRef}
-            className="mb-4 text-3xl font-bold text-gray-900 opacity-0 md:text-4xl"
+            className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl"
+            style={{ opacity: 0 }}
           >
             Serviços Odontológicos de{" "}
             <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
               Excelência
             </span>
           </h2>
-          <p ref={descRef} className="mx-auto max-w-2xl text-xl text-gray-600 opacity-0">
+          <p
+            ref={descRef}
+            className="mx-auto max-w-2xl text-xl text-gray-600"
+            style={{ opacity: 0 }}
+          >
             Tratamentos completos com tecnologia de ponta e equipe especializada para cuidar do seu
             sorriso
           </p>
