@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "products": "Products",
+    "team": "Team",
+    "booking": "Booking",
+    "contact": "Contact",
+    "schedule": "Schedule",
+    "testimonials": "Testimonials",
+    "tagline": "Dental Clinic"
+  },
+  "hero": {
+    "title": "Your Smile, Our Passion",
+    "subtitle": "Modern dental clinic with over 10 years of experience",
+    "cta": "Book Appointment"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer complete dental treatments for the whole family"
+  },
+  "products": {
+    "title": "Premium Products",
+    "subtitle": "Special selection of products for oral health"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Qualified dentists passionate about smiles"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are here to take care of your smile",
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "hours": "Opening Hours",
+      "schedule": {
+        "weekdays": "Monday - Friday: 8am to 7pm",
+        "saturday": "Saturday: 8am to 1pm"
+      }
+    },
+    "form": {
+      "title": "Send a Message",
+      "subtitle": "We'll respond as soon as possible",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more details...",
+      "submit": "Send Message",
+      "success": "Message sent successfully!"
+    },
+    "social": {
+      "title": "Follow Us",
+      "subtitle": "Connect with us on social media"
+    }
+  },
+  "footer": {
+    "tagline": "Taking care of your smile with excellence",
+    "description": "Modern dental clinic, specialized in aesthetic treatments and oral rehabilitation, with experienced professionals and state-of-the-art equipment.",
+    "taglineClinic": "Dental Clinic",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact",
+    "contactTitle": "Contact",
+    "navigation": "Navigation",
+    "copyright": "© 2025 Sorriso Vivo. All rights reserved.",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "team": "Team",
+      "testimonials": "Testimonials",
+      "booking": "Booking",
+      "contact": "Contact"
+    },
+    "hours": "Business Hours",
+    "hoursTitle": "Business Hours",
+    "legalInfo": "All rights reserved.",
+    "schedule": {
+      "weekdays": "Monday - Friday",
+      "weekdaysRange": "8am - 7pm",
+      "saturday": "Saturday",
+      "saturdayRange": "8am - 1pm",
+      "sunday": "Sunday",
+      "sundayRange": "Closed"
+    }
+  },
+  "services_data": {
+    "1": {
+      "title": "Teeth Whitening",
+      "description": "Restore the natural whiteness of your teeth with modern, safe and painless treatments",
+      "features": {
+        "1": "Latest generation laser whitening",
+        "2": "Supervised at-home whitening",
+        "3": "Long-lasting and natural results"
+      }
+    },
+    "2": {
+      "title": "Dental Veneers",
+      "description": "Transform your smile with ultra-thin high-quality porcelain veneers",
+      "features": {
+        "1": "100% personalized design",
+        "2": "Natural and harmonious appearance",
+        "3": "Minimally invasive procedure"
+      }
+    },
+    "3": {
+      "title": "Dental Implants",
+      "description": "Definitive and safe solution for tooth replacement with advanced technology",
+      "features": {
+        "1": "Premium titanium implants",
+        "2": "Proven high success rate",
+        "3": "Natural appearance and function"
+      }
+    },
+    "4": {
+      "title": "Modern Orthodontics",
+      "description": "Align your teeth with latest generation appliances that are comfortable and efficient",
+      "features": {
+        "1": "Aesthetic fixed appliances",
+        "2": "Invisible aligners (Invisalign-type)",
+        "3": "3D digital planning"
+      }
+    },
+    "5": {
+      "title": "Prevention and Complete Check-up",
+      "description": "Keep your oral health impeccable with periodic evaluations and preventive care",
+      "features": {
+        "1": "Detailed professional cleaning",
+        "2": "Complete dental evaluation",
+        "3": "Personalized prevention plan"
+      }
+    },
+    "6": {
+      "title": "Endodontics (Root Canal Treatment)",
+      "description": "Modern endodontic treatment, virtually painless with rapid recovery",
+      "features": {
+        "1": "Advanced technology with microscopy",
+        "2": "Comfortable procedure",
+        "3": "Post-treatment follow-up"
+      }
+    }
+  },
+  "team_data": {
+    "1": {
+      "name": "Dr. Ana Paula Ferreira",
+      "role": "Dental Surgeon",
+      "specialty": "Implantology and Dental Prosthetics",
+      "cro": "CRO-PR 28.452",
+      "bio": "Specialist in dental implants and oral rehabilitation with over 15 years of experience. Post-graduate from ABO-PR."
+    },
+    "2": {
+      "name": "Dr. Carlos Eduardo Mendes",
+      "role": "Dental Surgeon",
+      "specialty": "Orthodontics and Orthopedic Facial",
+      "cro": "CRO-PR 31.789",
+      "bio": "Specialist in modern orthodontics and invisible aligners. Member of the Brazilian Society of Orthodontics."
+    },
+    "3": {
+      "name": "Dr. Mariana Costa Lima",
+      "role": "Dental Surgeon",
+      "specialty": "Aesthetic Dentistry and Orofacial Harmonization",
+      "cro": "CRO-PR 29.634",
+      "bio": "Specialist in aesthetic dentistry, dental veneers and orofacial harmonization. International certification in smile design."
+    },
+    "4": {
+      "name": "Dr. Rafael Oliveira Santos",
+      "role": "Dental Surgeon",
+      "specialty": "Endodontics and Dental Surgery",
+      "cro": "CRO-PR 33.217",
+      "bio": "Specialist in root canal treatments with operative microscopy. Certified by the Brazilian Society of Endodontics."
+    }
+  },
+  "testimonials_data": {
+    "1": {
+      "name": "Maria Helena Santos",
+      "text": "Excellent service! I had two dental implants done with Dr. Ana Paula and the results exceeded my expectations. Modern clinic, attentive team and very professional. I highly recommend!",
+      "treatment": "Dental Implants",
+      "rating": "5"
+    },
+    "2": {
+      "name": "João Pedro Silva",
+      "text": "I had laser teeth whitening done and I'm impressed with the results. Quick, painless procedure and my smile looks much better. The team is extremely competent!",
+      "treatment": "Laser Teeth Whitening",
+      "rating": "5"
+    },
+    "3": {
+      "name": "Ana Carolina Ribeiro",
+      "text": "I had dental veneers done with Dr. Mariana and my smile looks incredible! The service was impeccable from the first consultation. Beautiful, clean clinic and very well equipped. Worth every penny!",
+      "treatment": "Dental Veneers",
+      "rating": "5"
+    },
+    "4": {
+      "name": "Roberto Almeida Costa",
+      "text": "I was afraid to have a root canal done, but Dr. Rafael was exceptional. Painless procedure, very careful and with all the technology. Changed my perception about dentists!",
+      "treatment": "Root Canal Treatment (Endodontics)",
+      "rating": "5"
+    },
+    "5": {
+      "name": "Juliana Martins Prado",
+      "text": "I started my orthodontic treatment with invisible aligners and I already see a big difference! Dr. Carlos is very attentive and explains everything in detail. I loved the clinic experience!",
+      "treatment": "Orthodontics with Invisible Aligners",
+      "rating": "5"
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "products": "Produtos",
+    "team": "Equipe",
+    "booking": "Agendamento",
+    "contact": "Contato",
+    "schedule": "Agendar",
+    "testimonials": "Depoimentos",
+    "tagline": "Clínica Odontológica"
+  },
+  "hero": {
+    "title": "Seu Sorriso, Nossa Paixão",
+    "subtitle": "Clínica odontológica moderna com mais de 10 anos de experiência",
+    "cta": "Agendar Consulta"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Oferecemos tratamentos odontológicos completos para toda a família"
+  },
+  "products": {
+    "title": "Produtos Premium",
+    "subtitle": "Seleção especial de produtos para saúde bucal"
+  },
+  "team": {
+    "title": "Nossa Equipe",
+    "subtitle": "Dentistas qualificados e apaixonados por sorrisos"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Estamos aqui para cuidar do seu sorriso",
+    "info": {
+      "title": "Informações de Contato",
+      "address": "Endereço",
+      "phone": "Telefone",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "hours": "Horário de Atendimento",
+      "schedule": {
+        "weekdays": "Segunda - Sexta: 8h às 19h",
+        "saturday": "Sábado: 8h às 13h"
+      }
+    },
+    "form": {
+      "title": "Envie uma Mensagem",
+      "subtitle": "Responderemos o mais breve possível",
+      "name": "Nome",
+      "namePlaceholder": "Seu nome",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "subject": "Assunto",
+      "subjectPlaceholder": "Como podemos ajudar?",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos mais detalhes...",
+      "submit": "Enviar Mensagem",
+      "success": "Mensagem enviada com sucesso!"
+    },
+    "social": {
+      "title": "Siga-nos",
+      "subtitle": "Conecte-se conosco nas redes sociais"
+    }
+  },
+  "footer": {
+    "tagline": "Cuidando do seu sorriso com excelência",
+    "description": "Clínica odontológica moderna, especializada em tratamentos estéticos e reabilitação oral, com profissionais experientes e equipamentos de última geração.",
+    "taglineClinic": "Clínica Odontológica",
+    "quickLinks": "Links Rápidos",
+    "contactInfo": "Contato",
+    "contactTitle": "Contato",
+    "navigation": "Navegação",
+    "copyright": "© 2025 Sorriso Vivo. Todos os direitos reservados.",
+    "links": {
+      "home": "Início",
+      "services": "Serviços",
+      "team": "Equipe",
+      "testimonials": "Depoimentos",
+      "booking": "Agendamento",
+      "contact": "Contato"
+    },
+    "hours": "Horário de Funcionamento",
+    "hoursTitle": "Horário de Funcionamento",
+    "legalInfo": "Todos os direitos reservados.",
+    "schedule": {
+      "weekdays": "Segunda - Sexta",
+      "weekdaysRange": "8h - 19h",
+      "saturday": "Sábado",
+      "saturdayRange": "8h - 13h",
+      "sunday": "Domingo",
+      "sundayRange": "Fechado"
+    }
+  },
+  "services_data": {
+    "1": {
+      "title": "Clareamento Dental",
+      "description": "Recupere o branco natural dos seus dentes com tratamentos modernos, seguros e indolores",
+      "features": {
+        "1": "Clareamento a laser de última geração",
+        "2": "Clareamento caseiro supervisionado",
+        "3": "Resultado duradouro e natural"
+      }
+    },
+    "2": {
+      "title": "Lentes de Contato Dental",
+      "description": "Transforme seu sorriso com lentes ultra-finas de porcelana de alta qualidade",
+      "features": {
+        "1": "Design 100% personalizado",
+        "2": "Aspecto natural e harmônico",
+        "3": "Procedimento minimamente invasivo"
+      }
+    },
+    "3": {
+      "title": "Implantes Dentários",
+      "description": "Solução definitiva e segura para substituição de dentes com tecnologia avançada",
+      "features": {
+        "1": "Implantes de titânio premium",
+        "2": "Alta taxa de sucesso comprovada",
+        "3": "Aparência e função naturais"
+      }
+    },
+    "4": {
+      "title": "Ortodontia Moderna",
+      "description": "Alinhe seus dentes com aparelhos de última geração, confortáveis e eficientes",
+      "features": {
+        "1": "Aparelhos fixos estéticos",
+        "2": "Alinhadores invisíveis (tipo Invisalign)",
+        "3": "Planejamento digital 3D"
+      }
+    },
+    "5": {
+      "title": "Prevenção e Check-up Completo",
+      "description": "Mantenha sua saúde bucal impecável com avaliações periódicas e cuidados preventivos",
+      "features": {
+        "1": "Limpeza profissional detalhada",
+        "2": "Avaliação odontológica completa",
+        "3": "Plano preventivo personalizado"
+      }
+    },
+    "6": {
+      "title": "Endodontia (Tratamento de Canal)",
+      "description": "Tratamento endodôntico moderno, praticamente indolor e com recuperação rápida",
+      "features": {
+        "1": "Tecnologia de ponta com microscopia",
+        "2": "Procedimento confortável",
+        "3": "Acompanhamento pós-tratamento"
+      }
+    }
+  },
+  "team_data": {
+    "1": {
+      "name": "Dra. Ana Paula Ferreira",
+      "role": "Cirurgiã-Dentista",
+      "specialty": "Implantodontia e Prótese Dentária",
+      "cro": "CRO-PR 28.452",
+      "bio": "Especialista em implantes dentários e reabilitação oral com mais de 15 anos de experiência. Pós-graduada pela ABO-PR."
+    },
+    "2": {
+      "name": "Dr. Carlos Eduardo Mendes",
+      "role": "Cirurgião-Dentista",
+      "specialty": "Ortodontia e Ortopedia Facial",
+      "cro": "CRO-PR 31.789",
+      "bio": "Especialista em ortodontia moderna e alinhadores invisíveis. Membro da Sociedade Brasileira de Ortodontia."
+    },
+    "3": {
+      "name": "Dra. Mariana Costa Lima",
+      "role": "Cirurgiã-Dentista",
+      "specialty": "Estética Dental e Harmonização Orofacial",
+      "cro": "CRO-PR 29.634",
+      "bio": "Especialista em odontologia estética, lentes de contato dental e harmonização orofacial. Certificação internacional em design de sorriso."
+    },
+    "4": {
+      "name": "Dr. Rafael Oliveira Santos",
+      "role": "Cirurgião-Dentista",
+      "specialty": "Endodontia e Dentística",
+      "cro": "CRO-PR 33.217",
+      "bio": "Especialista em tratamentos de canal com microscopia operatória. Certificado pela Sociedade Brasileira de Endodontia."
+    }
+  },
+  "testimonials_data": {
+    "1": {
+      "name": "Maria Helena Santos",
+      "text": "Excelente atendimento! Fiz dois implantes dentários com a Dra. Ana Paula e o resultado superou minhas expectativas. Clínica moderna, equipe atenciosa e muito profissional. Recomendo de olhos fechados!",
+      "treatment": "Implantes Dentários",
+      "rating": "5"
+    },
+    "2": {
+      "name": "João Pedro Silva",
+      "text": "Realizei o clareamento dental a laser e estou impressionado com o resultado. Procedimento rápido, indolor e meu sorriso ficou muito mais bonito. A equipe é extremamente competente!",
+      "treatment": "Clareamento Dental a Laser",
+      "rating": "5"
+    },
+    "3": {
+      "name": "Ana Carolina Ribeiro",
+      "text": "Fiz lentes de contato dental com a Dra. Mariana e meu sorriso ficou incrível! O atendimento foi impecável desde a primeira consulta. Clínica linda, limpa e muito bem equipada. Vale cada centavo!",
+      "treatment": "Lentes de Contato Dental",
+      "rating": "5"
+    },
+    "4": {
+      "name": "Roberto Almeida Costa",
+      "text": "Estava com medo de fazer tratamento de canal, mas o Dr. Rafael foi excepcional. Procedimento sem dor, muito cuidadoso e com toda tecnologia. Mudou minha percepção sobre dentistas!",
+      "treatment": "Tratamento de Canal (Endodontia)",
+      "rating": "5"
+    },
+    "5": {
+      "name": "Juliana Martins Prado",
+      "text": "Comecei meu tratamento ortodôntico com alinhadores invisíveis e já vejo muita diferença! Dr. Carlos é muito atencioso e explica tudo detalhadamente. Adorei a experiência na clínica!",
+      "treatment": "Ortodontia com Alinhadores Invisíveis",
+      "rating": "5"
+    }
+  }
+}

@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "@/components/commons/button";
+import { LanguageMenu } from "@/components/commons/language-menu";
 import { MobileMenu } from "./mobile-menu";
 import anime from "@/lib/anime";
 
 export function Navbar() {
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,12 +49,12 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#inicio", label: "Início" },
-    { href: "#servicos", label: "Serviços" },
-    { href: "#equipe", label: "Equipe" },
-    { href: "#depoimentos", label: "Depoimentos" },
-    { href: "#agendamento", label: "Agendamento" },
-    { href: "#contato", label: "Contato" },
+    { href: "#inicio", label: t("home") },
+    { href: "#servicos", label: t("services") },
+    { href: "#equipe", label: t("team") },
+    { href: "#depoimentos", label: t("testimonials") },
+    { href: "#agendamento", label: t("booking") },
+    { href: "#contato", label: t("contact") },
   ];
 
   return (
@@ -73,7 +76,7 @@ export function Navbar() {
               <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-xl font-bold text-transparent">
                 Sorriso Vivo
               </span>
-              <span className="-mt-1 text-xs text-gray-500">Odontologia Moderna</span>
+              <span className="-mt-1 text-xs text-gray-500">{t("tagline")}</span>
             </div>
           </Link>
 
@@ -94,8 +97,8 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Button and Language Menu */}
+          <div className="hidden items-center gap-3 md:flex">
             <Button
               className="bg-teal-600 text-white shadow-md transition-all hover:bg-teal-700 hover:shadow-lg"
               asChild
@@ -116,30 +119,34 @@ export function Navbar() {
                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
-                  Agendar Consulta
+                  {t("schedule")}
                 </span>
               </Link>
             </Button>
+            <LanguageMenu />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="rounded-lg p-2 text-gray-700 transition-colors hover:bg-teal-50 hover:text-teal-700 md:hidden"
-            aria-label="Menu"
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          {/* Mobile Menu Button and Language Menu */}
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageMenu />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="rounded-lg p-2 text-gray-700 transition-colors hover:bg-teal-50 hover:text-teal-700"
+              aria-label="Menu"
             >
-              {isOpen ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M4 6h16M4 12h16M4 18h16" />}
-            </svg>
-          </button>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isOpen ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M4 6h16M4 12h16M4 18h16" />}
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 

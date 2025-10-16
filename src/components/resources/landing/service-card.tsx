@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { type IService } from "@/types/landings";
 import {
   Card,
@@ -13,6 +14,16 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ service }: ServiceCardProps) {
+  const t = useTranslations();
+
+  const title = service.titleKey ? t(service.titleKey) : service.title || "Serviço";
+  const description = service.descriptionKey
+    ? t(service.descriptionKey)
+    : service.description || "";
+  const features = service.featuresKeys
+    ? service.featuresKeys.map((key) => t(key))
+    : service.features || [];
+
   return (
     <Card className="service-card group relative overflow-hidden border-teal-100 bg-white opacity-0 transition-all duration-300 hover:-translate-y-2 hover:border-teal-300 hover:shadow-xl">
       {/* Gradient overlay on hover */}
@@ -22,14 +33,14 @@ export function ServiceCard({ service }: ServiceCardProps) {
         <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-100 to-cyan-100 shadow-md transition-transform duration-300 group-hover:scale-110">
           <span className="text-4xl">{service.icon}</span>
         </div>
-        <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
+        <CardTitle className="text-xl font-bold text-gray-900">{title}</CardTitle>
         <CardDescription className="text-base leading-relaxed text-gray-600">
-          {service.description}
+          {description}
         </CardDescription>
       </CardHeader>
       <CardContent className="relative">
         <ul className="mb-6 space-y-3">
-          {service.features.map((feature, index) => (
+          {features.map((feature, index) => (
             <li key={index} className="flex items-start text-sm text-gray-700">
               <svg
                 className="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 text-teal-600"

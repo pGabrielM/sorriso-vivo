@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -6,30 +8,33 @@ import {
   CardTitle,
 } from "@/components/commons/card";
 import { contactInfo } from "@/utils/landing-helper";
+import { useTranslations } from "next-intl";
 
 export function ContactDetails() {
+  const t = useTranslations("contact");
+
   const contactDetails = [
     {
       icon: "📍",
-      title: "Endereço",
+      title: t("info.address"),
       details: `${contactInfo.address.full}`,
       link: contactInfo.mapUrl,
     },
     {
       icon: "📞",
-      title: "Telefone e WhatsApp",
+      title: t("info.phone"),
       details: `${contactInfo.contact.phone}\n${contactInfo.contact.whatsapp} (WhatsApp)`,
       link: `https://wa.me/554198765432`,
     },
     {
       icon: "📧",
-      title: "Email",
+      title: t("info.email"),
       details: contactInfo.contact.email,
       link: `mailto:${contactInfo.contact.email}`,
     },
     {
       icon: "🕐",
-      title: "Horário de Atendimento",
+      title: t("info.hours"),
       details: `${contactInfo.hours.weekdays}\n${contactInfo.hours.saturday}\n${contactInfo.hours.sunday}`,
     },
   ];
@@ -38,10 +43,8 @@ export function ContactDetails() {
     <div className="space-y-6">
       <Card className="border-teal-100">
         <CardHeader>
-          <CardTitle className="text-gray-900">Informações de Contato</CardTitle>
-          <CardDescription>
-            Entre em contato através de qualquer um dos canais abaixo
-          </CardDescription>
+          <CardTitle className="text-gray-900">{t("info.title")}</CardTitle>
+          <CardDescription>{t("subtitle")}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
           {contactDetails.map((item, index) => (

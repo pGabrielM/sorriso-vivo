@@ -1,29 +1,40 @@
 // Dental service interfaces
 export interface IService {
   icon: string;
-  title: string;
-  description: string;
-  features: string[];
+  titleKey?: string;
+  title?: string;
+  descriptionKey?: string;
+  description?: string;
+  featuresKeys?: string[];
+  features?: string[];
 }
 
 // Dentist/Team member interfaces
 export interface ITeamMember {
-  name: string;
-  role: string;
-  specialty: string;
+  nameKey?: string;
+  name?: string;
+  roleKey?: string;
+  role?: string;
+  specialtyKey?: string;
+  specialty?: string;
   image: string;
-  cro: string;
-  bio: string;
+  croKey?: string;
+  cro?: string;
+  bioKey?: string;
+  bio?: string;
 }
 
 // Testimonial interfaces
 export interface ITestimonial {
-  name: string;
+  nameKey?: string;
+  name?: string;
   image: string;
-  rating: number;
-  text: string;
+  rating: number | string;
+  textKey?: string;
+  text?: string;
   date: string;
-  treatment: string;
+  treatmentKey?: string;
+  treatment?: string;
 }
 
 // Booking form interfaces

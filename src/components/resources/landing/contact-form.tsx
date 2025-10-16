@@ -11,8 +11,10 @@ import {
   CardTitle,
 } from "@/components/commons/card";
 import type { IContactData } from "@/types/landings";
+import { useTranslations } from "next-intl";
 
 export function ContactForm() {
+  const t = useTranslations("contact.form");
   const [formData, setFormData] = useState<IContactData>({
     name: "",
     email: "",
@@ -24,72 +26,70 @@ export function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.warn("Contact data:", formData);
-    alert("Mensagem enviada com sucesso!");
+    alert(t("success"));
   };
 
   return (
-    <Card className="border-teal-100 shadow-xl">
+    <Card className="h-fit border-teal-100 shadow-xl">
       <CardHeader className="border-b border-teal-50 bg-gradient-to-r from-teal-50 to-cyan-50">
-        <CardTitle className="text-xl text-gray-900">Envie uma Mensagem</CardTitle>
-        <CardDescription className="text-base text-gray-600">
-          Responderemos o mais breve possível
-        </CardDescription>
+        <CardTitle className="text-xl text-gray-900">{t("title")}</CardTitle>
+        <CardDescription className="text-base text-gray-600">{t("subtitle")}</CardDescription>
       </CardHeader>
       <CardContent className="pt-6">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">Nome *</label>
+            <label className="mb-2 block text-sm font-medium text-gray-700">{t("name")} *</label>
             <Input
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="Seu nome"
+              placeholder={t("namePlaceholder")}
               className="border-teal-200 focus:ring-teal-500"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">Email *</label>
+            <label className="mb-2 block text-sm font-medium text-gray-700">{t("email")} *</label>
             <Input
               required
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="seu@email.com"
+              placeholder={t("emailPlaceholder")}
               className="border-teal-200 focus:ring-teal-500"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">Telefone *</label>
+            <label className="mb-2 block text-sm font-medium text-gray-700">{t("phone")} *</label>
             <Input
               required
               type="tel"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="(41) 99999-9999"
+              placeholder={t("phonePlaceholder")}
               className="border-teal-200 focus:ring-teal-500"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">Assunto *</label>
+            <label className="mb-2 block text-sm font-medium text-gray-700">{t("subject")} *</label>
             <Input
               required
               value={formData.subject}
               onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-              placeholder="Assunto da mensagem"
+              placeholder={t("subjectPlaceholder")}
               className="border-teal-200 focus:ring-teal-500"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">Mensagem *</label>
+            <label className="mb-2 block text-sm font-medium text-gray-700">{t("message")} *</label>
             <textarea
               required
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              placeholder="Sua mensagem..."
+              placeholder={t("messagePlaceholder")}
               className="min-h-[120px] w-full rounded-md border border-teal-200 px-3 py-2 transition-colors focus:border-teal-500 focus:ring-2 focus:ring-teal-500 focus:outline-none"
             />
           </div>
@@ -109,7 +109,7 @@ export function ContactForm() {
             >
               <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            Enviar Mensagem
+            {t("submit")}
           </Button>
         </form>
       </CardContent>

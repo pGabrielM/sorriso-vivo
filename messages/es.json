@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "products": "Productos",
+    "team": "Equipo",
+    "booking": "Reserva",
+    "contact": "Contacto",
+    "schedule": "Agendar",
+    "testimonials": "Testimonios",
+    "tagline": "Clínica Dental"
+  },
+  "hero": {
+    "title": "Tu Sonrisa, Nuestra Pasión",
+    "subtitle": "Clínica dental moderna con más de 10 años de experiencia",
+    "cta": "Reservar Cita"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos tratamientos dentales completos para toda la familia"
+  },
+  "products": {
+    "title": "Productos Premium",
+    "subtitle": "Selección especial de productos para salud bucal"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Dentistas calificados y apasionados por las sonrisas"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para cuidar tu sonrisa",
+    "info": {
+      "title": "Información de Contacto",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "email": "Correo Electrónico",
+      "hours": "Horario de Atención",
+      "schedule": {
+        "weekdays": "Lunes - Viernes: 8h a 19h",
+        "saturday": "Sábado: 8h a 13h"
+      }
+    },
+    "form": {
+      "title": "Enviar un Mensaje",
+      "subtitle": "Responderemos lo antes posible",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "(00) 00000-0000",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Cómo podemos ayudar?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos más detalles...",
+      "submit": "Enviar Mensaje",
+      "success": "¡Mensaje enviado con éxito!"
+    },
+    "social": {
+      "title": "Síguenos",
+      "subtitle": "Conéctate con nosotros en redes sociales"
+    }
+  },
+  "footer": {
+    "tagline": "Cuidando de su sonrisa con excelencia",
+    "description": "Clínica dental moderna, especializada en tratamientos estéticos y rehabilitación oral, con profesionales experimentados y equipos de última generación.",
+    "taglineClinic": "Clínica Dental",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Contacto",
+    "contactTitle": "Contacto",
+    "navigation": "Navegación",
+    "copyright": "© 2025 Sorriso Vivo. Todos los derechos reservados.",
+    "links": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "team": "Equipo",
+      "testimonials": "Testimonios",
+      "booking": "Reserva",
+      "contact": "Contacto"
+    },
+    "hours": "Horario de Funcionamiento",
+    "hoursTitle": "Horario de Funcionamiento",
+    "legalInfo": "Todos los derechos reservados.",
+    "schedule": {
+      "weekdays": "Lunes - Viernes",
+      "weekdaysRange": "8h - 19h",
+      "saturday": "Sábado",
+      "saturdayRange": "8h - 13h",
+      "sunday": "Domingo",
+      "sundayRange": "Cerrado"
+    }
+  },
+  "services_data": {
+    "1": {
+      "title": "Blanqueamiento Dental",
+      "description": "Recupera el blanco natural de tus dientes con tratamientos modernos, seguros e indoloros",
+      "features": {
+        "1": "Blanqueamiento láser de última generación",
+        "2": "Blanqueamiento casero supervisado",
+        "3": "Resultados duraderos y naturales"
+      }
+    },
+    "2": {
+      "title": "Carillas Dentales",
+      "description": "Transforma tu sonrisa con carillas de porcelana ultrafinas de alta calidad",
+      "features": {
+        "1": "Diseño 100% personalizado",
+        "2": "Apariencia natural y armoniosa",
+        "3": "Procedimiento mínimamente invasivo"
+      }
+    },
+    "3": {
+      "title": "Implantes Dentales",
+      "description": "Solución definitiva y segura para reemplazo de dientes con tecnología avanzada",
+      "features": {
+        "1": "Implantes de titanio premium",
+        "2": "Alta tasa de éxito comprobada",
+        "3": "Apariencia y función naturales"
+      }
+    },
+    "4": {
+      "title": "Ortodoncia Moderna",
+      "description": "Alinea tus dientes con aparatos de última generación, cómodos y eficientes",
+      "features": {
+        "1": "Aparatos fijos estéticos",
+        "2": "Alineadores invisibles (tipo Invisalign)",
+        "3": "Planificación digital 3D"
+      }
+    },
+    "5": {
+      "title": "Prevención y Revisión Completa",
+      "description": "Mantén tu salud bucal impecable con evaluaciones periódicas y cuidados preventivos",
+      "features": {
+        "1": "Limpieza profesional detallada",
+        "2": "Evaluación dental completa",
+        "3": "Plan preventivo personalizado"
+      }
+    },
+    "6": {
+      "title": "Endodoncia (Tratamiento de Conducto)",
+      "description": "Tratamiento endodóntico moderno, prácticamente indoloro con recuperación rápida",
+      "features": {
+        "1": "Tecnología avanzada con microscopía",
+        "2": "Procedimiento cómodo",
+        "3": "Seguimiento post-tratamiento"
+      }
+    }
+  },
+  "team_data": {
+    "1": {
+      "name": "Dra. Ana Paula Ferreira",
+      "role": "Cirujana Dentista",
+      "specialty": "Implantología y Prótesis Dental",
+      "cro": "CRO-PR 28.452",
+      "bio": "Especialista en implantes dentales y rehabilitación oral con más de 15 años de experiencia. Posgrado de ABO-PR."
+    },
+    "2": {
+      "name": "Dr. Carlos Eduardo Mendes",
+      "role": "Cirujano Dentista",
+      "specialty": "Ortodoncia y Ortopedia Facial",
+      "cro": "CRO-PR 31.789",
+      "bio": "Especialista en ortodoncia moderna y alineadores invisibles. Miembro de la Sociedad Brasileña de Ortodoncia."
+    },
+    "3": {
+      "name": "Dra. Mariana Costa Lima",
+      "role": "Cirujana Dentista",
+      "specialty": "Estética Dental y Armonización Orofacial",
+      "cro": "CRO-PR 29.634",
+      "bio": "Especialista en odontología estética, carillas dentales y armonización orofacial. Certificación internacional en diseño de sonrisa."
+    },
+    "4": {
+      "name": "Dr. Rafael Oliveira Santos",
+      "role": "Cirujano Dentista",
+      "specialty": "Endodoncia y Odontología Restauradora",
+      "cro": "CRO-PR 33.217",
+      "bio": "Especialista en tratamientos de conducto con microscopía operatoria. Certificado por la Sociedad Brasileña de Endodoncia."
+    }
+  },
+  "testimonials_data": {
+    "1": {
+      "name": "Maria Helena Santos",
+      "text": "¡Excelente atención! Me colocaron dos implantes dentales con la Dra. Ana Paula y los resultados superaron mis expectativas. Clínica moderna, equipo atento y muy profesional. ¡Lo recomiendo ampliamente!",
+      "treatment": "Implantes Dentales",
+      "rating": "5"
+    },
+    "2": {
+      "name": "João Pedro Silva",
+      "text": "Me hicieron blanqueamiento dental con láser y estoy impresionado con los resultados. Procedimiento rápido, indoloro y mi sonrisa se ve mucho mejor. ¡El equipo es extremadamente competente!",
+      "treatment": "Blanqueamiento Dental con Láser",
+      "rating": "5"
+    },
+    "3": {
+      "name": "Ana Carolina Ribeiro",
+      "text": "Me colocaron carillas dentales con la Dra. Mariana y ¡mi sonrisa se ve increíble! La atención fue impecable desde la primera consulta. Clínica bonita, limpia y muy bien equipada. ¡Vale cada centavo!",
+      "treatment": "Carillas Dentales",
+      "rating": "5"
+    },
+    "4": {
+      "name": "Roberto Almeida Costa",
+      "text": "Tenía miedo de hacerme un tratamiento de conducto, pero el Dr. Rafael fue excepcional. Procedimiento sin dolor, muy cuidadoso y con toda la tecnología. ¡Cambió mi percepción sobre los dentistas!",
+      "treatment": "Tratamiento de Conducto (Endodoncia)",
+      "rating": "5"
+    },
+    "5": {
+      "name": "Juliana Martins Prado",
+      "text": "Comencé mi tratamiento de ortodoncia con alineadores invisibles y ¡ya veo mucha diferencia! Dr. Carlos es muy atento y explica todo en detalle. ¡Me encantó la experiencia en la clínica!",
+      "treatment": "Ortodoncia con Alineadores Invisibles",
+      "rating": "5"
+    }
+  }
+}
