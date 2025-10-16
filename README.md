@@ -1,298 +1,202 @@
-# 🦷 Sorriso Vivo - Clínica Odontológica# Sorriso Vivo - Landing Page Profissional
+# 🦷 Sorriso Vivo - Professional Dental Clinic Landing Page
 
-![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black)Uma landing page completa e profissional para a clínica odontológica Sorriso Vivo, construída com as melhores práticas de desenvolvimento web moderno.
+![Badges](https://img.shields.io/badge/Next.js-15.5.3-black?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square) ![Tailwind](https://img.shields.io/badge/TailwindCSS-4-38bdf8?style=flat-square) ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8)## ✨ Características
-
-![Anime.js](https://img.shields.io/badge/Anime.js-4.2.0-red)
-
-- **Design Profissional**: Interface moderna com shadcn/ui e Tailwind CSS v4
-
-Site moderno e profissional para clínica odontológica com animações suaves e design responsivo.- **Animações Suaves**: Transições fluidas com Framer Motion
-
-- **Responsivo**: Otimizado para desktop, tablet e mobile
-
-## ✨ Características- **Acessível**: Componentes com suporte completo a acessibilidade
-
-- **Performance**: Build otimizado com Next.js 15 e Turbopack
-
-- 🎨 **Design Profissional**: Interface moderna e limpa focada em odontologia- **TypeScript**: Tipagem completa para maior segurança
-
-- 🚀 **Performance**: Next.js 15 com Turbopack para builds ultrarrápidos
-
-- 📱 **Responsivo**: Funciona perfeitamente em todos os dispositivos## 🚀 Tecnologias
-
-- ✨ **Animações Suaves**: Animações profissionais com Anime.js v4
-
-- 🎯 **SEO Otimizado**: Meta tags e estrutura otimizada para motores de busca- **Next.js 15** - Framework React com App Router
-
-- ♿ **Acessível**: Componentes acessíveis com Radix UI- **TypeScript** - Tipagem estática
-
-- **Tailwind CSS v4** - Framework CSS utilitário
-
-## 🏗️ Estrutura do Projeto- **shadcn/ui** - Biblioteca de componentes UI
-
-- **Framer Motion** - Animações e transições
-
-````- **Lucide React** - Ícones modernos
-
-src/- **ESLint** - Linting e qualidade de código
-
-├── app/                      # Next.js App Router
-
-│   ├── layout.tsx           # Layout principal## 📦 Instalação e Execução
-
-│   ├── page.tsx             # Página inicial
-
-│   └── globals.css          # Estilos globais1. **Clone o repositório:**
-
-├── components/   ```bash
-
-│   ├── landing/             # Componentes da landing page   git clone <repository-url>
-
-│   │   ├── navbar.tsx       # Navegação principal   cd sorriso-vivo
-
-│   │   ├── hero.tsx         # Seção hero   ```
-
-│   │   ├── services.tsx     # Seção de serviços
-
-│   │   ├── team.tsx         # Seção da equipe2. **Instale as dependências:**
-
-│   │   ├── testimonials.tsx # Depoimentos   ```bash
-
-│   │   ├── booking-form.tsx # Formulário de agendamento   npm install
-
-│   │   ├── contact-form.tsx # Formulário de contato   ```
-
-│   │   └── footer.tsx       # Rodapé
-
-│   └── ui/                  # Componentes UI reutilizáveis3. **Execute o servidor de desenvolvimento:**
-
-│       ├── button.tsx   ```bash
-
-│       ├── card.tsx   npm run dev
-
-│       ├── input.tsx   ```
-
-│       └── ...
-
-├── helpers/                 # Funções auxiliares4. **Abra no navegador:**
-
-│   └── landing-helper.ts    # Dados de serviços, equipe, depoimentos   [http://localhost:3000](http://localhost:3000)
-
-├── lib/                     # Bibliotecas e utilitários
-
-│   ├── anime.ts            # Wrapper do Anime.js## 🛠️ Scripts Disponíveis
-
-│   └── cn.ts               # Utilitário classnames
-
-└── types/                   # Definições TypeScript- `npm run dev` - Servidor de desenvolvimento
-
-    └── landing.d.ts        # Interfaces da landing page- `npm run build` - Build de produção
-
-```- `npm run start` - Servidor de produção
-
-- `npm run lint` - Verificação de código com ESLint
-
-## 🚀 Começando
-
-## 📁 Estrutura do Projeto
-
-### Pré-requisitos
-
-````
-
-- Node.js 20+src/
-
-- npm ou yarn├── app/ # Páginas Next.js (App Router)
-
-│ ├── layout.tsx # Layout principal com metadados
-
-### Instalação│ ├── page.tsx # Página inicial
-
-│ └── globals.css # Estilos globais e animações
-
-````bash├── components/            # Componentes organizados por domínio
-
-# Clone o repositório│   ├── ui/               # Componentes base (shadcn/ui)
-
-git clone <repository-url>│   ├── booking/          # Formulário de agendamento
-
-│   ├── contact/          # Formulários e detalhes de contato
-
-# Entre na pasta do projeto│   ├── footer/           # Rodapé da aplicação
-
-cd sorriso-vivo│   ├── hero/             # Seção principal
-
-│   ├── nav/              # Barra de navegação
-
-# Instale as dependências│   ├── services/         # Serviços oferecidos
-
-npm install│   ├── team/             # Equipe médica
-
-│   └── testimonials/     # Depoimentos de pacientes
-
-# Inicie o servidor de desenvolvimento├── constants/            # Dados constantes e mock
-
-npm run dev│   ├── services.ts       # Dados dos serviços
-
-```│   ├── team.ts           # Dados da equipe
-
-│   └── testimonials.ts   # Dados dos depoimentos
-
-Abra [http://localhost:3000](http://localhost:3000) para ver o resultado.├── types/                # Definições TypeScript
-
-│   └── types.ts          # Interfaces e tipos
-
-## 📝 Scripts Disponíveis└── utils/                # Utilitários e helpers
-
-    ├── cn.ts             # Função para combinar classes CSS
-
-```bash    └── utils.ts          # Funções utilitárias
-
-npm run dev         # Inicia o servidor de desenvolvimento com Turbopack```
-
-npm run build       # Cria build de produção
-
-npm run start       # Inicia o servidor de produção## 🎨 Paleta de Cores
-
-npm run lint        # Executa o linter
-
-npm run lint:fix    # Executa o linter e corrige automaticamente- **Primária**: Azul céu (#0ea5e9) - Confiança e profissionalismo
-
-```- **Secundária**: Âmbar (#f59e0b) - Energia e vitalidade
-
-- **Background**: Tons neutros para legibilidade
-
-## 🎨 Seções do Site
-
-## 📱 Seções da Landing Page
-
-### 1. **Hero Section**
-
-- Apresentação principal com CTA1. **Hero** - Apresentação com chamada para ação
-
-- Estatísticas da clínica2. **Serviços** - Tratamentos odontológicos oferecidos
-
-- Imagem destaque com cards flutuantes3. **Equipe** - Profissionais qualificados com fotos
-
-4. **Depoimentos** - Avaliações de pacientes satisfeitos
-
-### 2. **Serviços**5. **Agendamento** - Formulário para marcar consultas
-
-- Grid de cards com serviços odontológicos6. **Contato** - Informações e formulário de contato
-
-- Ícones personalizados7. **Footer** - Links úteis e informações da clínica
-
-- Features detalhadas de cada serviço
-
-## � Convenções do Projeto
-
-### 3. **Equipe**
-
-- Apresentação dos dentistas### Nomenclatura de Arquivos
-
-- Especialidades e CRO- **Componentes**: `kebab-case.tsx` (ex: `hero-section.tsx`, `booking-form.tsx`)
-
-- Fotos e biografias- **Pastas**: `kebab-case` (ex: `contact-details`, `team-members`)
-
-- **Índices**: `index.ts` para exportar módulos
-
-### 4. **Depoimentos**- **Tipos**: `PascalCase` para interfaces (ex: `TeamMember`, `Service`)
-
-- Avaliações de pacientes
-
-- Sistema de rating com estrelas### Estrutura de Componentes
-
-- Tratamentos realizados- Cada componente tem sua própria pasta
-
-- `index.ts` para exportar o componente principal
-
-### 5. **Agendamento**- Componentes relacionados ficam na mesma pasta
-
-- Formulário completo de agendamento- Separação clara entre UI base e componentes de negócio
-
-- Seleção de serviço e data
-
-- Validação de campos### Padrões de Código
-
-- **TypeScript** obrigatório em todos os arquivos
-
-### 6. **Contato**- **ESLint** configurado para qualidade de código
-
-- Formulário de contato- **Prettier** para formatação consistente
-
-- Informações da clínica- Diretiva `'use client'` para componentes que usam hooks/Framer Motion
-
-- Horários de atendimento
-
-## 📄 Licença
-
-## 🛠️ Tecnologias Utilizadas
-
-Este projeto é propriedade da Clínica Sorriso Vivo.
-
-- **Framework**: Next.js 15.5.3
-- **Linguagem**: TypeScript 5
-- **Estilização**: TailwindCSS 4
-- **Animações**: Anime.js 4.2.0
-- **Componentes**: Radix UI
-- **Ícones**: Lucide React
-- **Fontes**: Geist (Sans & Mono)
-
-## 📦 Principais Dependências
-
-```json
-{
-  "animejs": "^4.2.0",
-  "next": "15.5.3",
-  "react": "19.1.0",
-  "lucide-react": "^0.544.0",
-  "@radix-ui/react-avatar": "^1.1.10",
-  "tailwind-merge": "^3.3.1"
-}
-````
-
-## 🎯 Personalizações
-
-### Atualizar Informações da Clínica
-
-Edite o arquivo `src/helpers/landing-helper.ts` para atualizar:
-
-- Serviços oferecidos
-- Informações da equipe
-- Depoimentos de pacientes
-
-### Customizar Cores e Estilo
-
-As cores principais podem ser ajustadas no arquivo `src/app/globals.css`:
-
-- Azul primário: `#3B82F6`
-- Gradientes e sombras personalizados
-
-### Adicionar Mais Seções
-
-1. Crie um novo componente em `src/components/landing/`
-2. Importe e adicione ao `src/app/page.tsx`
-3. Atualize a navegação em `navbar.tsx`
-
-## 📱 Responsividade
-
-O site é totalmente responsivo com breakpoints:
-
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
-
-## ⚡ Performance
-
-- **Turbopack**: Builds 10x mais rápidos
-- **Lazy Loading**: Imagens carregadas sob demanda
-- **Code Splitting**: Bundles otimizados automaticamente
-- **Static Generation**: Páginas pré-renderizadas
+> 🚀 **Fictional Portfolio Project** - A modern and professional landing page for a dental clinic, developed as an example of architecture, resources, and best practices in modern web projects.
 
 ---
 
-Desenvolvido com ❤️ para **Sorriso Vivo**
+## 📋 About the Project
+
+**Sorriso Vivo** is a portfolio project demonstrating the creation of a complete and professional landing page for a healthcare business (dental clinic). It features a scalable architecture, modern componentization, professional animations, and full multilingual support.
+
+### 🎯 Objectives
+
+- Showcase of modern web development skills
+- Demonstration of React/Next.js component architecture
+- Best practices in TypeScript, TailwindCSS, and animations
+- Standardized structure with internationalization (i18n) support
+- Complete example of a professional landing page
+
+### ✨ Key Features
+
+- ✅ **Professional Design**: Modern interface with reusable UI
+- ✅ **Responsive**: Desktop, tablet, and mobile
+- ✅ **Smooth Animations**: Anime.js + Framer Motion
+- ✅ **Performance**: Next.js 15 with Turbopack
+- ✅ **Strict TypeScript**: Complete typing
+- ✅ **Multilingual**: PT/EN/ES with next-intl
+- ✅ **SEO Optimized**: Meta tags and semantic structure
+- ✅ **Accessible**: WCAG compliance
+
+---
+
+## 🚀 Technologies Used
+
+### Core
+
+- Next.js 15.5.3 - React Framework
+- React 19 - JavaScript Library
+- TypeScript 5 - Typed Language
+
+### Styling
+
+- TailwindCSS 4 - Utility-first CSS
+- Shadcn/UI - Accessible Components
+- Lucide React - SVG Icons
+
+### Animations
+
+- Anime.js 4.2.0 - JavaScript Animations
+- Framer Motion - React Animations
+
+### Internationalization
+
+- next-intl - Multilingual Support
+- 80+ translation keys in 3 languages
+
+### Quality
+
+- ESLint - Code Linting
+- Prettier - Code Formatting
+- Radix UI - Accessibility
+
+---
+
+## 📦 Installation and Execution
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Quick Start
+
+```bash
+git clone https://github.com/usuario/sorriso-vivo.git
+cd sorriso-vivo
+npm install
+npm run dev
+# Open http://localhost:3000
+```
+
+### Available Scripts
+
+```bash
+npm run dev       # Server with Turbopack
+npm run build     # Production build
+npm run start     # Production server
+npm run lint      # Check code
+npm run lint:fix  # Fix automatically
+npm run format    # Format with Prettier
+```
+
+---
+
+## 🏗️ Project Structure
+
+```
+sorriso-vivo/
+├── public/images/          # Optimized images
+├── messages/               # Translations (PT/EN/ES)
+├── src/
+│   ├── app/
+│   │   ├── [locale]/      # Routes by language
+│   │   ├── layout.tsx
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── commons/       # Base components (Button, Card, etc)
+│   │   └── resources/
+│   │       └── landing/   # Landing page components
+│   ├── i18n/              # i18n configuration
+│   ├── types/             # TypeScript interfaces
+│   ├── utils/             # Data and helpers
+│   └── lib/               # Anime.js, cn(), etc
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 🎨 Landing Page Sections
+
+| Section          | Description                            |
+| ---------------- | -------------------------------------- |
+| **Navbar**       | Responsive menu with language selector |
+| **Hero**         | Main presentation with CTA             |
+| **Services**     | 6 dental services with i18n            |
+| **Team**         | 4 professionals with specialties       |
+| **Testimonials** | 5 reviews with ratings                 |
+| **Booking**      | Form with validation                   |
+| **Contact**      | Form + information                     |
+| **Footer**       | Links and clinic info                  |
+
+---
+
+## 🌍 Internationalization (i18n)
+
+Supports **3 languages** with automatic routing:
+
+```
+http://localhost:3000/pt   # Portuguese (default)
+http://localhost:3000/en   # English
+http://localhost:3000/es   # Spanish
+```
+
+### Usage in Components
+
+```typescript
+'use client';
+import { useTranslations } from 'next-intl';
+
+export function ServiceCard({ service }: Props) {
+  const t = useTranslations();
+  const title = service.titleKey ? t(service.titleKey) : service.title;
+  return <h3>{title}</h3>;
+}
+```
+
+---
+
+## 🎨 Color Palette
+
+| Color          | Usage                |
+| -------------- | -------------------- |
+| Teal (#0d9488) | Primary, buttons     |
+| Cyan (#06b6d4) | Secondary, gradients |
+| Gray (#111827) | Text                 |
+
+---
+
+## 📱 Responsiveness
+
+- **Mobile**: < 640px
+- **Tablet**: 640px - 1024px
+- **Desktop**: > 1024px
+
+---
+
+## ⚡ Performance
+
+- Turbopack: ~10x faster
+- Image Optimization: lazy loading
+- Code Splitting: automatic
+- SSG/ISR: as needed
+
+---
+
+## 📚 Documentation
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [next-intl](https://next-intl-docs.vercel.app/)
+- [TailwindCSS](https://tailwindcss.com/docs)
+- [Anime.js](https://animejs.com/documentation/)
+
+---
+
+## 👥 Author
+
+**Developed by**: Gabriel M.  
+**Type**: Fictional portfolio project  
+**Year**: 2025
