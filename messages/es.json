@@ -11,25 +11,43 @@
     "tagline": "Clínica Dental"
   },
   "hero": {
-    "title": "Tu Sonrisa, Nuestra Pasión",
-    "subtitle": "Clínica dental moderna con más de 10 años de experiencia",
-    "cta": "Reservar Cita"
+    "badge": "✨ Odontología de Excelencia en Curitiba",
+    "title1": "Tu sonrisa perfecta",
+    "title2": "comienza aquí en Batel",
+    "subtitle": "Cuidamos la salud y la estética de tu sonrisa con tecnología de punta, equipo altamente calificado y una atención personalizada que mereces.",
+    "cta1": "Reservar Consulta Gratuita",
+    "cta2": "Conoce Nuestros Servicios",
+    "floatingCards": {
+      "modern": "Clínica Moderna",
+      "modernDesc": "Tecnología de última generación",
+      "humanized": "Atención Humanizada",
+      "humanizedDesc": "Comodidad y seguridad"
+    },
+    "stats": {
+      "experience": "Años de Experiencia",
+      "smilesMade": "Sonrisas Transformadas",
+      "satisfaction": "Satisfacción de Pacientes"
+    }
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Ofrecemos tratamientos dentales completos para toda la familia"
+    "badge": "🦷 Nuestros Tratamientos",
+    "title": "Servicios Odontológicos de Excelencia",
+    "subtitle": "Tratamientos completos con tecnología de punta y equipo especializado para cuidar tu sonrisa",
+    "learnMore": "Programar Evaluación"
   },
   "products": {
     "title": "Productos Premium",
     "subtitle": "Selección especial de productos para salud bucal"
   },
   "team": {
-    "title": "Nuestro Equipo",
-    "subtitle": "Dentistas calificados y apasionados por las sonrisas"
+    "badge": "👥 Conoce Nuestro Equipo",
+    "title": "Especialistas en Odontología",
+    "subtitle": "Dentistas altamente calificados y certificados por el CRO-PR, comprometidos con tu salud bucal"
   },
   "contact": {
-    "title": "Contáctanos",
-    "subtitle": "Estamos aquí para cuidar tu sonrisa",
+    "badge": "📞 Contáctanos",
+    "title": "Estamos Aquí Para Ti",
+    "subtitle": "Nuestro equipo está listo para servirte con excelencia. Contáctanos o visita nuestra clínica en el corazón de Batel en Curitiba.",
     "info": {
       "title": "Información de Contacto",
       "address": "Dirección",
@@ -58,13 +76,44 @@
       "submit": "Enviar Mensaje",
       "success": "¡Mensaje enviado con éxito!"
     },
-    "social": {
-      "title": "Síguenos",
-      "subtitle": "Conéctate con nosotros en redes sociales"
-    }
+    "cta": {
+      "title": "¿Listo para transformar tu sonrisa?",
+      "subtitle": "¡Programa tu evaluación gratuita y descubre cómo nuestro equipo puede crear la sonrisa de tus sueños!",
+      "button1": "Programar Evaluación Gratuita",
+      "button2": "WhatsApp"
+    },
+    "map": "Ubicación Sorriso Vivo - Batel, Curitiba"
+  },
+  "testimonials": {
+    "badge": "⭐ Testimonios Reales",
+    "title": "Lo Que Dicen Nuestros Pacientes",
+    "subtitle": "Historias reales de transformación y satisfacción con nuestros tratamientos"
+  },
+  "booking": {
+    "badge": "📅 Reserva Ahora",
+    "title": "Programa Tu Cita",
+    "subtitle": "Completa el formulario y nos pondremos en contacto para confirmar",
+    "cardTitle": "Información de Reserva",
+    "cardDescription": "Proporciona tus datos y servicio deseado",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre",
+      "phone": "Teléfono",
+      "phonePlaceholder": "(41) 99999-9999",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "service": "Servicio Deseado",
+      "servicePlaceholder": "Selecciona un servicio",
+      "date": "Fecha Preferida",
+      "time": "Hora Preferida",
+      "message": "Mensaje (Opcional)",
+      "messagePlaceholder": "Cuéntanos más sobre tus necesidades...",
+      "submit": "Confirmar Cita"
+    },
+    "success": "¡Cita enviada con éxito! Nos pondremos en contacto pronto."
   },
   "footer": {
-    "tagline": "Cuidando de su sonrisa con excelencia",
+    "tagline": "Cuidando tu sonrisa con excelencia",
     "description": "Clínica dental moderna, especializada en tratamientos estéticos y rehabilitación oral, con profesionales experimentados y equipos de última generación.",
     "taglineClinic": "Clínica Dental",
     "quickLinks": "Enlaces Rápidos",
@@ -181,7 +230,7 @@
   "testimonials_data": {
     "1": {
       "name": "Maria Helena Santos",
-      "text": "¡Excelente atención! Me colocaron dos implantes dentales con la Dra. Ana Paula y los resultados superaron mis expectativas. Clínica moderna, equipo atento y muy profesional. ¡Lo recomiendo ampliamente!",
+      "text": "¡Excelente servicio! Me hicieron dos implantes dentales con la Dra. Ana Paula y los resultados superaron mis expectativas. Clínica moderna, equipo atento y muy profesional. ¡Recomiendo ampliamente!",
       "treatment": "Implantes Dentales",
       "rating": "5"
     },

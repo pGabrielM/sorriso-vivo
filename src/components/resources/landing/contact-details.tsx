@@ -74,17 +74,14 @@ export function ContactDetails() {
 
       <Card className="border-none bg-gradient-to-br from-teal-600 to-cyan-600 text-white shadow-lg">
         <CardContent className="pt-6">
-          <h3 className="mb-2 text-xl font-bold">Pronto para transformar seu sorriso?</h3>
-          <p className="mb-4 text-teal-50">
-            Agende sua avaliação gratuita e descubra como nossa equipe pode criar o sorriso dos seus
-            sonhos!
-          </p>
+          <h3 className="mb-2 text-xl font-bold">{t("cta.title")}</h3>
+          <p className="mb-4 text-teal-50">{t("cta.subtitle")}</p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href="#agendamento"
               className="inline-block rounded-lg bg-white px-6 py-3 text-center font-semibold text-teal-700 transition-all hover:bg-teal-50 hover:shadow-md"
             >
-              Agendar Avaliação Gratuita
+              {t("cta.button1")}
             </a>
             <a
               href="https://wa.me/554198765432?text=Olá! Gostaria de agendar uma consulta na Sorriso Vivo."
@@ -92,7 +89,7 @@ export function ContactDetails() {
               rel="noopener noreferrer"
               className="inline-block rounded-lg border-2 border-white px-6 py-3 text-center font-semibold text-white transition-all hover:bg-white hover:text-teal-700"
             >
-              WhatsApp
+              {t("cta.button2")}
             </a>
           </div>
         </CardContent>
@@ -110,7 +107,7 @@ export function ContactDetails() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Sorriso Vivo - Batel, Curitiba"
+              title={t("map")}
             />
           </div>
         </CardContent>

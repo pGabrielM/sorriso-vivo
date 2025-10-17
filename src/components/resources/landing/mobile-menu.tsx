@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/commons/button";
+import { useTranslations } from "next-intl";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -8,6 +9,7 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ isOpen, navLinks, onClose }: MobileMenuProps) {
+  const t = useTranslations("nav");
   if (!isOpen) return null;
 
   return (
@@ -40,7 +42,7 @@ export function MobileMenu({ isOpen, navLinks, onClose }: MobileMenuProps) {
               >
                 <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              Agendar Consulta
+              {t("schedule")}
             </Link>
           </Button>
         </div>

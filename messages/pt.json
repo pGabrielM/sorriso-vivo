@@ -11,25 +11,43 @@
     "tagline": "Clínica Odontológica"
   },
   "hero": {
-    "title": "Seu Sorriso, Nossa Paixão",
-    "subtitle": "Clínica odontológica moderna com mais de 10 anos de experiência",
-    "cta": "Agendar Consulta"
+    "badge": "✨ Odontologia de Excelência em Curitiba",
+    "title1": "Seu sorriso perfeito",
+    "title2": "começa aqui no Batel",
+    "subtitle": "Cuidamos da saúde e estética do seu sorriso com tecnologia de ponta, equipe altamente qualificada e um atendimento personalizado que você merece.",
+    "cta1": "Agendar Consulta Gratuita",
+    "cta2": "Conheça Nossos Serviços",
+    "floatingCards": {
+      "modern": "Clínica Moderna",
+      "modernDesc": "Tecnologia de última geração",
+      "humanized": "Atendimento Humanizado",
+      "humanizedDesc": "Conforto e segurança"
+    },
+    "stats": {
+      "experience": "Anos de Experiência",
+      "smilesMade": "Sorrisos Transformados",
+      "satisfaction": "Satisfação dos Pacientes"
+    }
   },
   "services": {
-    "title": "Nossos Serviços",
-    "subtitle": "Oferecemos tratamentos odontológicos completos para toda a família"
+    "badge": "🦷 Nossos Tratamentos",
+    "title": "Serviços Odontológicos de Excelência",
+    "subtitle": "Tratamentos completos com tecnologia de ponta e equipe especializada para cuidar do seu sorriso",
+    "learnMore": "Agendar Avaliação"
   },
   "products": {
     "title": "Produtos Premium",
     "subtitle": "Seleção especial de produtos para saúde bucal"
   },
   "team": {
-    "title": "Nossa Equipe",
-    "subtitle": "Dentistas qualificados e apaixonados por sorrisos"
+    "badge": "👥 Conheça Nossa Equipe",
+    "title": "Especialistas em Odontologia",
+    "subtitle": "Dentistas altamente qualificados e certificados pelo CRO-PR, comprometidos com sua saúde bucal"
   },
   "contact": {
-    "title": "Entre em Contato",
-    "subtitle": "Estamos aqui para cuidar do seu sorriso",
+    "badge": "📞 Entre em Contato",
+    "title": "Estamos Aqui Para Você",
+    "subtitle": "Nossa equipe está pronta para atender você com excelência. Entre em contato ou visite nossa clínica no coração do Batel em Curitiba.",
     "info": {
       "title": "Informações de Contato",
       "address": "Endereço",
@@ -58,10 +76,41 @@
       "submit": "Enviar Mensagem",
       "success": "Mensagem enviada com sucesso!"
     },
-    "social": {
-      "title": "Siga-nos",
-      "subtitle": "Conecte-se conosco nas redes sociais"
-    }
+    "cta": {
+      "title": "Pronto para transformar seu sorriso?",
+      "subtitle": "Agende sua avaliação gratuita e descubra como nossa equipe pode criar o sorriso dos seus sonhos!",
+      "button1": "Agendar Avaliação Gratuita",
+      "button2": "WhatsApp"
+    },
+    "map": "Localização Sorriso Vivo - Batel, Curitiba"
+  },
+  "testimonials": {
+    "badge": "⭐ Depoimentos Reais",
+    "title": "O Que Nossos Pacientes Dizem",
+    "subtitle": "Histórias reais de transformação e satisfação com nossos tratamentos"
+  },
+  "booking": {
+    "badge": "📅 Agende Agora",
+    "title": "Marque Sua Consulta",
+    "subtitle": "Preencha o formulário e entraremos em contato para confirmar",
+    "cardTitle": "Dados para Agendamento",
+    "cardDescription": "Informe seus dados e o serviço desejado",
+    "form": {
+      "name": "Nome Completo",
+      "namePlaceholder": "Seu nome",
+      "phone": "Telefone",
+      "phonePlaceholder": "(41) 99999-9999",
+      "email": "Email",
+      "emailPlaceholder": "seu@email.com",
+      "service": "Serviço Desejado",
+      "servicePlaceholder": "Selecione um serviço",
+      "date": "Data Preferida",
+      "time": "Horário Preferido",
+      "message": "Mensagem (Opcional)",
+      "messagePlaceholder": "Conte-nos mais sobre sua necessidade...",
+      "submit": "Confirmar Agendamento"
+    },
+    "success": "Agendamento enviado com sucesso! Entraremos em contato em breve."
   },
   "footer": {
     "tagline": "Cuidando do seu sorriso com excelência",

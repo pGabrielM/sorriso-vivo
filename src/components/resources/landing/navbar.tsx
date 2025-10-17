@@ -81,15 +81,15 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center space-x-1 md:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+                className={`transition-all duration-300 ${
                   activeSection === link.href.slice(1)
-                    ? "bg-teal-50 text-teal-700 shadow-sm"
-                    : "text-gray-700 hover:bg-teal-50/50 hover:text-teal-600"
+                    ? "glass-nav-item-active"
+                    : "glass-nav-item text-gray-700 hover:text-teal-700"
                 }`}
               >
                 {link.label}

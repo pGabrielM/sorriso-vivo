@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { type ITestimonial } from "@/types/landings";
-import { Card, CardContent, CardHeader } from "@/components/commons/card";
 
 interface TestimonialCardProps {
   testimonial: ITestimonial;
@@ -19,24 +18,27 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
     : testimonial.treatment || "";
 
   return (
-    <Card className="group relative overflow-hidden border-teal-100 bg-white transition-all duration-300 hover:-translate-y-2 hover:border-teal-300 hover:shadow-xl">
-      {/* Quote icon background */}
-      <div className="pointer-events-none absolute top-4 right-4 text-8xl text-teal-50 opacity-50 transition-opacity duration-300 group-hover:opacity-70">
+    <div className="testimonial-card group relative">
+      {/* Quote Icon Background */}
+      <div className="pointer-events-none absolute -top-6 -right-6 text-8xl font-light text-blue-100/40 select-none">
         "
       </div>
 
-      <CardHeader className="relative">
-        <div className="flex items-center space-x-4">
-          <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-teal-100 transition-all duration-300 group-hover:ring-4 group-hover:ring-teal-200">
+      {/* Card Content */}
+      <div className="relative z-10 rounded-2xl border border-white/20 bg-white/80 p-6 shadow-lg backdrop-blur-md backdrop-filter transition-all duration-300 group-hover:bg-white/90 group-hover:shadow-2xl">
+        {/* Header with Avatar */}
+        <div className="mb-4 flex items-center space-x-4">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full ring-2 ring-blue-200 transition-all duration-300 group-hover:ring-4 group-hover:ring-blue-300">
             <Image src={testimonial.image} alt={name} fill className="object-cover" />
           </div>
-          <div>
+          <div className="flex-1">
             <h4 className="font-bold text-gray-900">{name}</h4>
-            <div className="mt-1 flex text-yellow-400">
+            {/* Star Rating with Gold Color */}
+            <div className="mt-2 flex gap-1">
               {[...Array(testimonial.rating)].map((_, i) => (
                 <svg
                   key={i}
-                  className="h-4 w-4 fill-current transition-transform duration-300 group-hover:scale-110"
+                  className="h-4 w-4 fill-amber-400 transition-transform duration-300 hover:scale-125"
                   viewBox="0 0 20 20"
                   style={{ transitionDelay: `${i * 50}ms` }}
                 >
@@ -46,29 +48,31 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
             </div>
           </div>
         </div>
-      </CardHeader>
-      <CardContent className="relative">
-        <p className="mb-4 text-sm leading-relaxed text-gray-700">{text}</p>
-        <div className="flex items-center justify-between border-t border-teal-50 pt-4">
-          <div className="inline-flex items-center rounded-full bg-gradient-to-r from-teal-50 to-cyan-50 px-3 py-1">
+
+        {/* Testimonial Text */}
+        <p className="mb-4 text-sm leading-relaxed text-gray-700 italic">"{text}"</p>
+
+        {/* Treatment Badge and Date */}
+        <div className="flex items-center justify-between border-t border-blue-100 pt-4">
+          <div className="inline-flex items-center rounded-lg border border-blue-200 bg-gradient-to-r from-blue-50 to-teal-50 px-3 py-1">
             <svg
-              className="mr-1.5 h-4 w-4 text-teal-600"
+              className="mr-1.5 h-3 w-3 text-blue-600"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
+              strokeWidth="2.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span className="text-xs font-semibold text-teal-700">{treatment}</span>
+            <span className="text-xs font-semibold text-blue-700">{treatment}</span>
           </div>
-          <div className="text-xs text-gray-500">
+          <span className="text-xs text-gray-500">
             {new Date(testimonial.date).toLocaleDateString("pt-BR")}
-          </div>
+          </span>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }

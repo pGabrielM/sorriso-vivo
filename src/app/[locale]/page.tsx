@@ -7,8 +7,10 @@ import { BookingForm } from "@/components/resources/landing/booking-form";
 import { ContactForm } from "@/components/resources/landing/contact-form";
 import { ContactDetails } from "@/components/resources/landing/contact-details";
 import { Footer } from "@/components/resources/landing/footer";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("contact");
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -22,15 +24,10 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-16 text-center">
               <div className="mb-4 inline-flex items-center rounded-full border border-teal-200 bg-teal-100 px-4 py-2">
-                <span className="text-sm font-semibold text-teal-700">📞 Entre em Contato</span>
+                <span className="text-sm font-semibold text-teal-700">{t("badge")}</span>
               </div>
-              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                Estamos Aqui Para Você
-              </h2>
-              <p className="mx-auto max-w-3xl text-xl text-gray-600">
-                Nossa equipe está pronta para atender você com excelência. Entre em contato ou
-                visite nossa clínica no coração do Batel em Curitiba.
-              </p>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("title")}</h2>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600">{t("subtitle")}</p>
             </div>
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               <ContactForm />

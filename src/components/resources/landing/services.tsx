@@ -4,8 +4,10 @@ import { services } from "@/utils/landing-helper";
 import { ServiceCard } from "./service-card";
 import { useEffect, useRef } from "react";
 import anime from "@/lib/anime";
+import { useTranslations } from "next-intl";
 
 export function Services() {
+  const t = useTranslations("services");
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -69,29 +71,31 @@ export function Services() {
   }, []);
 
   return (
-    <section id="servicos" className="bg-gradient-to-b from-white via-teal-50/30 to-white py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+      id="servicos"
+      className="relative bg-gradient-to-b from-white via-blue-50/20 to-white py-20"
+    >
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-blue-100/30 blur-3xl" />
+      <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-teal-100/30 blur-3xl" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-block rounded-full border border-teal-200 bg-teal-50 px-4 py-1.5">
-            <span className="text-sm font-medium text-teal-700">🦷 Nossos Tratamentos</span>
-          </div>
+          <div className="badge-primary mb-4">{t("badge")}</div>
           <h2
             ref={titleRef}
             className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl"
             style={{ opacity: 0 }}
           >
-            Serviços Odontológicos de{" "}
-            <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-              Excelência
-            </span>
+            {t("title")}
+            <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent" />
           </h2>
           <p
             ref={descRef}
             className="mx-auto max-w-2xl text-xl text-gray-600"
             style={{ opacity: 0 }}
           >
-            Tratamentos completos com tecnologia de ponta e equipe especializada para cuidar do seu
-            sorriso
+            {t("subtitle")}
           </p>
         </div>
 

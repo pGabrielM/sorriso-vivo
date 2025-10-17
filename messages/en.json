@@ -11,25 +11,43 @@
     "tagline": "Dental Clinic"
   },
   "hero": {
-    "title": "Your Smile, Our Passion",
-    "subtitle": "Modern dental clinic with over 10 years of experience",
-    "cta": "Book Appointment"
+    "badge": "✨ Dentistry of Excellence in Curitiba",
+    "title1": "Your perfect smile",
+    "title2": "starts here in Batel",
+    "subtitle": "We care for the health and aesthetics of your smile with cutting-edge technology, highly qualified staff and personalized care that you deserve.",
+    "cta1": "Book Free Consultation",
+    "cta2": "Learn About Our Services",
+    "floatingCards": {
+      "modern": "Modern Clinic",
+      "modernDesc": "Latest generation technology",
+      "humanized": "Humanized Care",
+      "humanizedDesc": "Comfort and safety"
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "smilesMade": "Smiles Transformed",
+      "satisfaction": "Patient Satisfaction"
+    }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "We offer complete dental treatments for the whole family"
+    "badge": "🦷 Our Treatments",
+    "title": "Dental Services of Excellence",
+    "subtitle": "Complete treatments with cutting-edge technology and specialized team to care for your smile",
+    "learnMore": "Schedule Evaluation"
   },
   "products": {
     "title": "Premium Products",
     "subtitle": "Special selection of products for oral health"
   },
   "team": {
-    "title": "Our Team",
-    "subtitle": "Qualified dentists passionate about smiles"
+    "badge": "👥 Meet Our Team",
+    "title": "Specialists in Dentistry",
+    "subtitle": "Highly qualified dentists certified by CRO-PR, committed to your oral health"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We are here to take care of your smile",
+    "badge": "📞 Get in Touch",
+    "title": "We're Here For You",
+    "subtitle": "Our team is ready to serve you with excellence. Contact us or visit our clinic in the heart of Batel in Curitiba.",
     "info": {
       "title": "Contact Information",
       "address": "Address",
@@ -58,10 +76,41 @@
       "submit": "Send Message",
       "success": "Message sent successfully!"
     },
-    "social": {
-      "title": "Follow Us",
-      "subtitle": "Connect with us on social media"
-    }
+    "cta": {
+      "title": "Ready to transform your smile?",
+      "subtitle": "Schedule your free evaluation and discover how our team can create the smile of your dreams!",
+      "button1": "Schedule Free Evaluation",
+      "button2": "WhatsApp"
+    },
+    "map": "Sorriso Vivo Location - Batel, Curitiba"
+  },
+  "testimonials": {
+    "badge": "⭐ Real Testimonials",
+    "title": "What Our Patients Say",
+    "subtitle": "Real stories of transformation and satisfaction with our treatments"
+  },
+  "booking": {
+    "badge": "📅 Book Now",
+    "title": "Schedule Your Appointment",
+    "subtitle": "Fill out the form and we will contact you to confirm",
+    "cardTitle": "Booking Information",
+    "cardDescription": "Provide your details and desired service",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "phone": "Phone",
+      "phonePlaceholder": "(41) 99999-9999",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "service": "Desired Service",
+      "servicePlaceholder": "Select a service",
+      "date": "Preferred Date",
+      "time": "Preferred Time",
+      "message": "Message (Optional)",
+      "messagePlaceholder": "Tell us more about your needs...",
+      "submit": "Confirm Appointment"
+    },
+    "success": "Appointment sent successfully! We will contact you soon."
   },
   "footer": {
     "tagline": "Taking care of your smile with excellence",

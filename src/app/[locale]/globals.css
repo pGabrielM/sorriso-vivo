@@ -1,45 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  /* Cores principais - Azul confiança + Verde menta saúde */
-  --primary: #0d9488;
-  /* Verde-azulado (teal) profissional */
+  /* Cores profissionais para clínicas odontológicas - Contraste elevado */
+  /* Azul profundo - confiança e profissionalismo */
+  --primary: #003d7a;
   --primary-foreground: #ffffff;
-  --secondary: #06b6d4;
-  /* Cyan claro */
+
+  /* Teal/Verde-azulado - higiene e frescor */
+  --secondary: #008080;
   --secondary-foreground: #ffffff;
 
-  /* Cores neutras clínicas */
-  --muted: #f0fdfa;
-  /* Verde muito claro - limpeza */
-  --muted-foreground: #64748b;
-  --accent: #e0f2fe;
-  /* Azul muito claro */
-  --accent-foreground: #0e7490;
+  /* Ouro/Dourado - premium e sofisticação */
+  --accent: #d4af37;
+  --accent-foreground: #003d7a;
+
+  /* Cores neutras clínicas - Branco puro + Cinza profundo */
+  --muted: #f8f9fa;
+  --muted-foreground: #2d3748;
+
+  /* Azul muito claro para hover states */
+  --accent-light: #e6f2ff;
+  --accent-light-foreground: #003d7a;
 
   /* Cores de superfície */
   --card: #ffffff;
-  --card-foreground: #1e293b;
+  --card-foreground: #1a202c;
   --background: #ffffff;
-  --foreground: #1e293b;
+  --foreground: #1a202c;
 
   /* Cores funcionais */
-  --destructive: #ef4444;
+  --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --success: #10b981;
-  /* Verde sucesso */
+  --success: #059669;
   --success-foreground: #ffffff;
 
-  /* Bordas e inputs */
-  --border: #d1d5db;
-  --input: #e5e7eb;
-  --ring: #0d9488;
+  /* Bordas e inputs com mais definição */
+  --border: #cbd5e1;
+  --input: #f1f5f9;
+  --ring: #003d7a;
   --radius: 0.75rem;
 
-  /* Sombras suaves */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* Sombras mais profundas e profissionais */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 61, 122, 0.1);
+  --shadow: 0 4px 12px -2px rgba(0, 61, 122, 0.15);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 61, 122, 0.2);
+  --shadow-xl: 0 20px 40px -3px rgba(0, 61, 122, 0.25);
 }
 
 body {
@@ -142,4 +147,229 @@ p {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Liquid Glass Effect - iOS 26 Style */
+.glass-nav-item {
+  position: relative;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.glass-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.glass-nav-item-active {
+  position: relative;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  background-color: rgba(0, 61, 122, 0.25);
+  backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(0, 61, 122, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 61, 122, 0.15);
+  color: #003d7a;
+}
+
+.glass-nav-item-active:hover {
+  background-color: rgba(0, 61, 122, 0.35);
+  border-color: rgba(0, 61, 122, 0.5);
+  box-shadow: 0 12px 20px rgba(0, 61, 122, 0.2);
+}
+
+/* Professional Card Styles */
+.card-professional {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid rgba(0, 61, 122, 0.1);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.card-professional:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(0, 61, 122, 0.2);
+}
+
+/* Service Card with Glass Effect */
+.service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px) saturate(120%);
+  border: 1px solid rgba(0, 61, 122, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #003d7a, #d4af37);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 61, 122, 0.15);
+  border-color: rgba(0, 61, 122, 0.3);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Team Card Professional */
+.team-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px) saturate(150%);
+  border: 1px solid rgba(0, 61, 122, 0.1);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(0, 61, 122, 0.2);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.team-card .specialty {
+  background: linear-gradient(135deg, rgba(0, 61, 122, 0.1), rgba(212, 175, 55, 0.1));
+  color: #003d7a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Testimonial Card with Glass */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px) saturate(140%);
+  border: 1px solid rgba(0, 61, 122, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: rgba(212, 175, 55, 0.3);
+  font-weight: bold;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px) scaleX(1.02);
+  box-shadow: 0 20px 45px rgba(0, 61, 122, 0.15);
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 0.25rem;
+  color: #d4af37;
+  font-size: 1.25rem;
+}
+
+/* Booking Form Glass */
+.booking-form-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(150%);
+  border: 2px solid rgba(0, 61, 122, 0.15);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0, 61, 122, 0.15);
+  transition: all 0.4s ease;
+}
+
+.booking-form-card:hover {
+  border-color: rgba(0, 61, 122, 0.25);
+  box-shadow: 0 30px 60px rgba(0, 61, 122, 0.2);
+}
+
+/* Booking Form Card Header */
+.booking-form-card > div:first-child {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 61, 122, 0.1);
+}
+
+/* Booking Form Inputs */
+.booking-form-card input,
+.booking-form-card select,
+.booking-form-card textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(0, 61, 122, 0.15);
+  border-radius: 0.75rem;
+  padding-left: 2.75rem;
+  transition: all 0.3s ease;
+}
+
+.booking-form-card input::placeholder,
+.booking-form-card textarea::placeholder {
+  color: rgba(45, 55, 72, 0.5);
+}
+
+.booking-form-card input:focus,
+.booking-form-card select:focus,
+.booking-form-card textarea:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: #003d7a;
+  box-shadow: 0 0 0 3px rgba(0, 61, 122, 0.1);
+}
+
+/* Input Focus States */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #003d7a;
+  box-shadow: 0 0 0 3px rgba(0, 61, 122, 0.1);
+  outline: none;
+}
+
+/* Badge Styles */
+.badge-primary {
+  background: linear-gradient(135deg, #003d7a, #0055a4);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-accent {
+  background: linear-gradient(135deg, #d4af37, #e6c055);
+  color: #003d7a;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
 }

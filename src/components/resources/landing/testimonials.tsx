@@ -2,24 +2,26 @@
 
 import { testimonials } from "@/utils/landing-helper";
 import { TestimonialCard } from "./testimonial-card";
+import { useTranslations } from "next-intl";
 
 export function Testimonials() {
+  const t = useTranslations("testimonials");
   return (
-    <section id="depoimentos" className="bg-gradient-to-b from-teal-50 via-white to-teal-50 py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+      id="depoimentos"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-blue-50/20 to-white py-20"
+    >
+      {/* Decorative Elements */}
+      <div className="pointer-events-none absolute top-32 left-1/4 h-80 w-80 rounded-full bg-blue-400/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-1/4 bottom-20 h-96 w-96 rounded-full bg-teal-400/5 blur-3xl" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-block rounded-full border border-teal-200 bg-teal-50 px-4 py-1.5">
-            <span className="text-sm font-medium text-teal-700">⭐ Depoimentos Reais</span>
+          <div className="badge-primary mb-4 inline-block">
+            <span className="text-sm font-semibold">{t("badge")}</span>
           </div>
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-            O Que Nossos{" "}
-            <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-              Pacientes Dizem
-            </span>
-          </h2>
-          <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            Histórias reais de transformação e satisfação com nossos tratamentos
-          </p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("title")}</h2>
+          <p className="mx-auto max-w-2xl text-xl text-gray-600">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

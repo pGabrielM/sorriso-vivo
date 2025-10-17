@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { type ITeamMember } from "@/types/landings";
-import { Card, CardContent, CardDescription, CardHeader } from "@/components/commons/card";
-import { Badge } from "@/components/commons/badge";
 
 interface TeamCardProps {
   member: ITeamMember;
@@ -18,29 +16,34 @@ export function TeamCard({ member }: TeamCardProps) {
   const bio = member.bioKey ? t(member.bioKey) : member.bio || "";
 
   return (
-    <Card className="group relative overflow-hidden border-teal-100 bg-white transition-all duration-300 hover:-translate-y-2 hover:border-teal-300 hover:shadow-xl">
-      {/* Gradient overlay on hover */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-50/0 via-cyan-50/0 to-teal-50/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-      <CardHeader className="relative text-center">
-        <div className="relative mx-auto mb-4 h-40 w-40 overflow-hidden rounded-full ring-4 ring-teal-100 transition-all duration-300 group-hover:ring-8 group-hover:ring-teal-200">
-          <Image
-            src={member.image}
-            alt={name}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-110"
-          />
+    <div className="team-card group relative">
+      {/* Image Container */}
+      <div className="relative mx-auto mb-6 h-48 w-48 overflow-hidden rounded-2xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+        <Image
+          src={member.image}
+          alt={name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        {/* Overlay with specialty badge */}
+        <div className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/40 to-transparent pb-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div className="badge-accent">
+            <span className="text-xs font-bold">{specialty.toUpperCase()}</span>
+          </div>
         </div>
-        <h3 className="text-xl font-bold text-gray-900">{name}</h3>
-        <CardDescription className="text-sm font-medium text-gray-600">{role}</CardDescription>
-        <Badge className="mx-auto mt-3 border-teal-200 bg-teal-50 text-teal-700 hover:bg-teal-100">
-          {specialty}
-        </Badge>
-      </CardHeader>
-      <CardContent className="relative text-center">
-        <div className="mb-3 inline-flex items-center rounded-full bg-gradient-to-r from-teal-100 to-cyan-100 px-3 py-1">
+      </div>
+
+      {/* Card Content */}
+      <div className="rounded-2xl border border-white/20 bg-white/80 p-6 shadow-lg backdrop-blur-md backdrop-filter transition-all duration-300 group-hover:bg-white/90 group-hover:shadow-2xl">
+        <div className="mb-3 text-center">
+          <h3 className="text-xl font-bold text-gray-900">{name}</h3>
+          <p className="text-sm font-semibold text-blue-600">{role}</p>
+        </div>
+
+        {/* Professional Badge with CRO */}
+        <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-100 bg-gradient-to-r from-blue-50 to-teal-50 px-3 py-2">
           <svg
-            className="mr-1.5 h-4 w-4 text-teal-700"
+            className="h-4 w-4 text-blue-600"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -50,10 +53,12 @@ export function TeamCard({ member }: TeamCardProps) {
           >
             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span className="text-sm font-semibold text-teal-700">{cro}</span>
+          <span className="text-xs font-bold text-blue-700">{cro}</span>
         </div>
-        <p className="text-sm leading-relaxed text-gray-600">{bio}</p>
-      </CardContent>
-    </Card>
+
+        {/* Bio */}
+        <p className="text-center text-sm leading-relaxed text-gray-600">{bio}</p>
+      </div>
+    </div>
   );
 }
